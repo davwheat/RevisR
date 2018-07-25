@@ -1860,6 +1860,9 @@ namespace RevisR
 			// aapt resource value: 0x7f070051
 			public const int disabled_alpha_material_light = 2131165265;
 			
+			// aapt resource value: 0x7f07009f
+			public const int fab_margin = 2131165343;
+			
 			// aapt resource value: 0x7f070000
 			public const int fastscroll_default_thickness = 2131165184;
 			

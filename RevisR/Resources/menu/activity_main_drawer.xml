@@ -4,22 +4,30 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+      <item
+          android:id="@+id/nav_home"
+          android:icon="@drawable/menu_home"
+          android:title="@string/nav_home" />
+      <item
+          android:id="@+id/nav_english"
+          android:icon="@drawable/menu_english"
+          android:title="@string/nav_english" />
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_maths"
+            android:icon="@drawable/menu_maths"
+            android:title="@string/nav_maths" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_geography"
+            android:icon="@drawable/menu_geography"
+            android:title="@string/nav_geography" />
+      <item
+          android:id="@+id/nav_history"
+          android:icon="@drawable/menu_history"
+          android:title="@string/nav_history" />
+      <item
+          android:id="@+id/nav_computing"
+          android:icon="@drawable/menu_computing"
+          android:title="@string/nav_computing" />
     </group>
 
     <item android:title="Communicate">
@@ -31,7 +39,7 @@
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Feedback" />
         </menu>
     </item>
 

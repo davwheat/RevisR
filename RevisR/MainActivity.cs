@@ -1,6 +1,4 @@
-﻿using System;
-using Android;
-using Android.App;
+﻿using Android.App;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
@@ -17,25 +15,28 @@ namespace RevisR
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
-
-            DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
+            var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+            var toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
             drawer.AddDrawerListener(toggle);
             toggle.SyncState();
 
-            NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
+            var navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.SetNavigationItemSelectedListener(this);
+
+            var fragment = new HomeFragment();
+            var fragmentTransaction = FragmentManager.BeginTransaction();
+            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            fragmentTransaction.AddToBackStack(null);
+            fragmentTransaction.Commit();
         }
 
         public override void OnBackPressed()
         {
-            DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            if(drawer.IsDrawerOpen(GravityCompat.Start))
+            var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+            if (drawer.IsDrawerOpen(GravityCompat.Start))
             {
                 drawer.CloseDrawer(GravityCompat.Start);
             }
@@ -53,55 +54,72 @@ namespace RevisR
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            int id = item.ItemId;
-            if (id == Resource.Id.action_settings)
+            var id = item.ItemId;
+            if (id == Resource.Id.action_exit)
             {
-                return true;
+                closeApplication();
             }
 
             return base.OnOptionsItemSelected(item);
         }
 
-        private void FabOnClick(object sender, EventArgs eventArgs)
-        {
-            View view = (View) sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
-        }
-
         public bool OnNavigationItemSelected(IMenuItem item)
         {
-            int id = item.ItemId;
+            var id = item.ItemId;
+            Fragment fragment = null;
 
-            if (id == Resource.Id.nav_camera)
+            switch (id)
             {
-                // Handle the camera action
+                default:
+                    break;
+
+                case Resource.Id.nav_home:
+                    fragment = new HomeFragment();
+                    break;
+
+                case Resource.Id.nav_english:
+                    fragment = new EnglishHomeFragment();
+                    break;
+
+                case Resource.Id.nav_maths:
+                    fragment = new MathsHomeFragment();
+                    break;
+
+                case Resource.Id.nav_geography:
+                    break;
+
+                case Resource.Id.nav_history:
+                    break;
+
+                case Resource.Id.nav_share:
+                    break;
+
+                case Resource.Id.nav_send:
+                    break;
             }
-            else if (id == Resource.Id.nav_gallery)
+
+            if (fragment != null)
             {
+                //home_fragment
+                var fragmentTransaction = FragmentManager.BeginTransaction();
+                fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+                fragmentTransaction.AddToBackStack(null);
+                fragmentTransaction.Commit();
 
+                var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+                drawer.CloseDrawer(GravityCompat.Start);
+                return true;
             }
-            else if (id == Resource.Id.nav_slideshow)
+            else
             {
-
+                Snackbar.Make(FindViewById(Android.Resource.Id.Content), "Not currently supported", 0).Show();
             }
-            else if (id == Resource.Id.nav_manage)
-            {
+            return false;
+        }
 
-            }
-            else if (id == Resource.Id.nav_share)
-            {
-
-            }
-            else if (id == Resource.Id.nav_send)
-            {
-
-            }
-
-            DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            drawer.CloseDrawer(GravityCompat.Start);
-            return true;
+        public static void closeApplication()
+        {
+            Process.KillProcess(Process.MyPid());
         }
     }
 }
-

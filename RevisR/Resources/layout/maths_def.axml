@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <TextView
+            style="@style/title"
+            android:text="@string/maths_title"
+            android:id="@+id/textView2" />
+        <TextView
+            style="@style/subtitle"
+            android:text="@string/maths_definitions_subtitle"
+            android:id="@+id/textView2" />
+        <View
+            style="@style/Divider" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Integers"
+            android:id="@+id/define_int" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Square Numbers"
+            android:id="@+id/define_sqnum" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Square Roots"
+            android:id="@+id/define_sqroot" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Cube Numbers/Root"
+            android:id="@+id/define_cubenum" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Prime Numbers"
+            android:id="@+id/define_prime" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Rational/Irrational Numbers"
+            android:id="@+id/define_rational" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Reciprocal"
+            android:id="@+id/define_reciprocal" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Factors"
+            android:id="@+id/define_factor" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Multiples"
+            android:id="@+id/define_multiples" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Prime Factors"
+            android:id="@+id/define_primefactors" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="HCF (Highest Common Factor)"
+            android:id="@+id/define_hcf" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="LCM (Lowest Common Multiple)"
+            android:id="@+id/define_lcm" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Rounding to Decimal Places"
+            android:id="@+id/define_rounddp" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Rounding to Significant Figures"
+            android:id="@+id/define_roundsf" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Estimatings &amp; Approximating"
+            android:id="@+id/define_estimate" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Calculations with Upper &amp; Lower Bounds"
+            android:id="@+id/define_calcbounds" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Intervals, Bounds &amp; Error Intervals"
+            android:id="@+id/define_bounds" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Fractions to Decimals"
+            android:id="@+id/define_fractodec" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Decimals to Fractions"
+            android:id="@+id/define_dectofrac" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Percentage &amp; Decimal Conversion"
+            android:id="@+id/define_pcttodec" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="Fraction &amp; Percentage Conversion"
+            android:id="@+id/define_fractopct" />
+        <View
+            style="@style/itemSeparator" />
+    </LinearLayout>
+</ScrollView>
