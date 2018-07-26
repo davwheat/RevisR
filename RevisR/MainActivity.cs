@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
@@ -33,14 +34,16 @@ namespace RevisR
             fragmentTransaction.Commit();
         }
 
-        protected override void OnSaveInstanceState(Bundle savedInstanceState)
+        public void sendFeedback()
         {
-            //save current fragment index
-        }
-
-        protected override void OnRestoreInstanceState(Bundle savedInstanceState)
-        {
-            //save current fragment index
+            var email = new Intent(Intent.ActionSend);
+            email.PutExtra(Intent.ExtraEmail, new string[] {
+                "davidwheatley03@gmail.com"
+            });
+            email.PutExtra(Intent.ExtraSubject, "RevisR Feedback");
+            email.PutExtra(Intent.ExtraText, "Please enter the feedback you would like to give...");
+            email.SetType("message/rfc822");
+            StartActivity(email);
         }
 
         public override void OnBackPressed()
@@ -104,7 +107,11 @@ namespace RevisR
                 case Resource.Id.nav_share:
                     break;
 
-                case Resource.Id.nav_send:
+                case Resource.Id.nav_feedback:
+                    sendFeedback();
+                    return false;
+
+                case Resource.Id.nav_about:
                     break;
             }
 
@@ -122,9 +129,9 @@ namespace RevisR
             }
             else
             {
-                Snackbar.Make(FindViewById(Android.Resource.Id.Content), "Not currently supported", 0).Show();
+                Snackbar.Make(FindViewById(Android.Resource.Id.Content), "Work in progress", 0).Show();
+                return false;
             }
-            return false;
         }
 
         public static void closeApplication()
