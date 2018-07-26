@@ -27,7 +27,7 @@ namespace RevisR
 
         public void openEngLangMethod(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangFragment();
+            Fragment fragment = new EnglishLangHomeFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
@@ -36,7 +36,7 @@ namespace RevisR
 
         public void openEngLitMethod(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLitFragment();
+            Fragment fragment = new EnglishLitHomeFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
