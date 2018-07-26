@@ -18,4 +18,4 @@ install:
   - /Library/Frameworks/Mono.framework/Commands/nuget restore RevisR.sln
 
 script:
-  - /Library/Frameworks/Mono.framework/Commands/xbuild /t:SignAndroidPackage /p:Configuration=Release Droid/solution-name.csproj
+  - /Library/Frameworks/Mono.framework/Commands/xbuild /t:SignAndroidPackage /p:Configuration=Release Droid/RevisR.csproj
