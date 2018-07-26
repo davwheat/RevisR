@@ -2,9 +2,9 @@
 using Android.OS;
 using Android.Views;
 
-namespace RevisR.Fragments
+namespace RevisR.Fragments.English.Language
 {
-    public class HomeFragment : Fragment
+    public class EnglishLangPaper2bFragment : Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -13,7 +13,7 @@ namespace RevisR.Fragments
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            return inflater.Inflate(Resource.Layout.home, container, false);
+            return inflater.Inflate(Resource.Layout.english_paper2b, container, false);
         }
     }
 }

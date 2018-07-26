@@ -4,7 +4,7 @@ using Android.Views;
 using Android.Widget;
 using System;
 
-namespace RevisR
+namespace RevisR.Fragments.English
 {
     public class EnglishHomeFragment : Fragment
     {
@@ -27,7 +27,7 @@ namespace RevisR
 
         public void openEngLangMethod(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangHomeFragment();
+            Fragment fragment = new Fragments.English.Language.EnglishLangHomeFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
@@ -36,7 +36,7 @@ namespace RevisR
 
         public void openEngLitMethod(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLitHomeFragment();
+            Fragment fragment = new Fragments.English.Literature.EnglishLitHomeFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
