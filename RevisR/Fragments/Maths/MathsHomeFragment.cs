@@ -1,12 +1,11 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Views;
-using Android.Widget;
 using System;
 
-namespace RevisR
+namespace RevisR.Fragments.Maths
 {
-    public class EnglishLitHomeFragment : Fragment
+    public class MathsHomeFragment : Fragment
     {
         private View view;
 
@@ -17,16 +16,20 @@ namespace RevisR
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.english_lit, container, false);
+            view = inflater.Inflate(Resource.Layout.maths_home, container, false);
 
-            ((TextView)view.FindViewById(Resource.Id.engLitTechniquesButton)).Click += openEnglishTechniques;
+            var openMathsDefineButton = view.FindViewById(Resource.Id.showDefinitions);
+            openMathsDefineButton.Click += (object sender, EventArgs e) =>
+            {
+                openMathsDefinitions(sender, e);
+            };
 
             return view;
         }
 
-        public void openEnglishTechniques(object sender, EventArgs e)
+        public void openMathsDefinitions(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLitTechniquesFragment();
+            Fragment fragment = new MathsDefinitionsFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);

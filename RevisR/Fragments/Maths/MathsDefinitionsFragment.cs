@@ -5,7 +5,7 @@ using Android.Widget;
 using System;
 using System.Collections.Generic;
 
-namespace RevisR
+namespace RevisR.Fragments.Maths
 {
     public class MathsDefinitionsFragment : Fragment
     {

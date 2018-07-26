@@ -26,7 +26,7 @@ namespace RevisR
             var navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.SetNavigationItemSelectedListener(this);
 
-            var fragment = new HomeFragment();
+            var fragment = new Fragments.HomeFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
@@ -84,15 +84,15 @@ namespace RevisR
                     break;
 
                 case Resource.Id.nav_home:
-                    fragment = new HomeFragment();
+                    fragment = new Fragments.HomeFragment();
                     break;
 
                 case Resource.Id.nav_english:
-                    fragment = new EnglishHomeFragment();
+                    fragment = new Fragments.English.EnglishHomeFragment();
                     break;
 
                 case Resource.Id.nav_maths:
-                    fragment = new MathsHomeFragment();
+                    fragment = new Fragments.Maths.MathsHomeFragment();
                     break;
 
                 case Resource.Id.nav_geography:

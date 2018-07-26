@@ -4,7 +4,7 @@ using Android.Views;
 using Android.Widget;
 using System;
 
-namespace RevisR
+namespace RevisR.Fragments.English.Language
 {
     public class EnglishLangHomeFragment : Fragment
     {
