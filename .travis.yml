@@ -15,7 +15,7 @@ install:
   - sudo installer -pkg "MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.universal.pkg" -target /
   - wget "https://dl.xamarin.com/MonoforAndroid/Mac/xamarin.android-${MONO_ANDROID_VERSION}.pkg"
   - sudo installer -pkg "xamarin.android-${MONO_ANDROID_VERSION}.pkg" -target /
-  - /Library/Frameworks/Mono.framework/Commands/nuget restore solution-name.sln
+  - /Library/Frameworks/Mono.framework/Commands/nuget restore RevisR.sln
 
 script:
   - /Library/Frameworks/Mono.framework/Commands/xbuild /t:SignAndroidPackage /p:Configuration=Release Droid/solution-name.csproj
