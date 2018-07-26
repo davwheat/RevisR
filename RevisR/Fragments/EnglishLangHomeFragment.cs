@@ -6,8 +6,7 @@ using System;
 
 namespace RevisR
 {
-
-    public class EnglishLangFragment : Fragment
+    public class EnglishLangHomeFragment : Fragment
     {
         private View view;
 
@@ -62,58 +61,6 @@ namespace RevisR
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
             fragmentTransaction.Commit();
-        }
-    }
-
-    public class EnglishLangPaper1aFragment : Fragment
-    {
-        public override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-        }
-
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
-            return inflater.Inflate(Resource.Layout.english_paper1a, container, false);
-        }
-    }
-
-    public class EnglishLangPaper1bFragment : Fragment
-    {
-        public override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-        }
-
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
-            return inflater.Inflate(Resource.Layout.english_paper1b, container, false);
-        }
-    }
-
-    public class EnglishLangPaper2aFragment : Fragment
-    {
-        public override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-        }
-
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
-            return inflater.Inflate(Resource.Layout.english_paper2a, container, false);
-        }
-    }
-
-    public class EnglishLangPaper2bFragment : Fragment
-    {
-        public override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-        }
-
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
-            return inflater.Inflate(Resource.Layout.english_paper2b, container, false);
         }
     }
 }

@@ -64,12 +64,15 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnglishLang.cs" />
-    <Compile Include="EnglishLit.cs" />
-    <Compile Include="HomeFragment.cs" />
-    <Compile Include="EnglishFragment.cs" />
+    <Compile Include="Fragments\EnglishLangHomeFragment.cs" />
+    <Compile Include="Fragments\EnglishLangPaperFragments.cs" />
+    <Compile Include="Fragments\EnglishLitHomeFragment.cs" />
+    <Compile Include="Fragments\EnglishLitTechniquesFragment.cs" />
+    <Compile Include="Fragments\HomeFragment.cs" />
+    <Compile Include="Fragments\EnglishHomeFragment.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="MathsFragment.cs" />
+    <Compile Include="Fragments\MathsDefinitionFragment.cs" />
+    <Compile Include="Fragments\MathsHomeFragment.cs" />
     <None Include="Resource.Designer.cs.old" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
