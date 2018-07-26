@@ -8,7 +8,7 @@ using Android.Views;
 
 namespace RevisR
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -31,6 +31,16 @@ namespace RevisR
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
             fragmentTransaction.Commit();
+        }
+
+        protected override void OnSaveInstanceState(Bundle savedInstanceState)
+        {
+            //save current fragment index
+        }
+
+        protected override void OnRestoreInstanceState(Bundle savedInstanceState)
+        {
+            //save current fragment index
         }
 
         public override void OnBackPressed()
