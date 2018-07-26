@@ -88,6 +88,7 @@ namespace RevisR
 
                 var values = new[]
                 {
+                    // Must Know
                     new KeyValuePair<string, string>("Alliteration", "A series of words in a row which have the same first consonant sound. For example 'an ant ate an apple'."),
                     new KeyValuePair<string, string>("Bias", "Inclination or prejudice for or against one person or group, especially in a way considered to be unfair."),
                     new KeyValuePair<string, string>("Connotations", "Implied or suggested meanings of words or phrases."),
@@ -110,10 +111,8 @@ namespace RevisR
                     new KeyValuePair<string, string>("Third Person", "Using 'he', 'she' and 'they' to tell the story."),
                     new KeyValuePair<string, string>("Tone", "The way a piece sounds to the reader. (e.g. sarcastic)"),
                     new KeyValuePair<string, string>("Triplets", "The repetition of three ideas, words or phrases close together."),
-
-
-
-
+                    
+                    // Others
                     new KeyValuePair<string, string>("Allegory", "An extended metaphor in which a symbolic story is told. Used most notably in 'The Lion, the Witch, and the Wardrobe' by C.S. Lewis; and 'The Lord of the Flies' by Willian Golding."),
                     new KeyValuePair<string, string>("Anecdote", "A short story using examples to support ideas, bring cheer, reminisce or to caution. For example: 'The Boy Who Cried Wolf'."),
                     new KeyValuePair<string, string>("Assonance", "The repetition of vowel sounds."),
@@ -140,9 +139,6 @@ namespace RevisR
                 var dict = new Dictionary<string, string>(values);
 
                 var notDefaultValue = dict.TryGetValue(buttonText, out string msg);
-
-
-
                 if (notDefaultValue)
                 {
                     ad.SetMessage(msg);
