@@ -88,6 +88,7 @@
 
   <!-- LITERATURE -->
   <string name="eng_lit_subtitle_techniques">Writing Techniques</string>
+  <string name="eng_lit_subtitle_punctuation">Punctuation &amp; Usage</string>
 
   <!-- MATHS -->
   <string name="maths_title">Maths Foundation &amp; Higher</string>

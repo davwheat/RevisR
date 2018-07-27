@@ -17,13 +17,19 @@
             style="@style/subtitle"
             android:text="@string/eng_home_subtitle"
             android:id="@+id/textView2" />
-      <View
-          style="@style/LargeDivider" />
+        <View
+            style="@style/LargeDivider" />
         <TextView
             style="@style/maths_def"
             android:text="@string/eng_lit_subtitle_techniques"
             android:id="@+id/engLitTechniquesButton" />
-      <View
-          style="@style/itemSeparator" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/eng_lit_subtitle_punctuation"
+            android:id="@+id/engLitPunctuationButton" />
+        <View
+            style="@style/itemSeparator" />
     </LinearLayout>
 </ScrollView>

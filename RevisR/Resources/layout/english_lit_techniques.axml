@@ -30,133 +30,133 @@
         <TextView
             style="@style/maths_def"
             android:text="Alliteration"
-            android:id="@+id/engLitShowAlliteration" />
+            android:id="@+id/engLitTechniquesShowAlliteration" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Bias"
-            android:id="@+id/engLitShowBias" />
+            android:id="@+id/engLitTechniquesShowBias" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Connotations"
-            android:id="@+id/engLitShowConnotations" />
+            android:id="@+id/engLitTechniquesShowConnotations" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Dialogue"
-            android:id="@+id/engLitShowDialogue" />
+            android:id="@+id/engLitTechniquesShowDialogue" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Directive"
-            android:id="@+id/engLitShowDirective" />
+            android:id="@+id/engLitTechniquesShowDirective" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Elipsis"
-            android:id="@+id/engLitShowElipsis" />
+            android:id="@+id/engLitTechniquesShowElipsis" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Emotive Language"
-            android:id="@+id/engLitShowEmotiveLanguage" />
+            android:id="@+id/engLitTechniquesShowEmotiveLanguage" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Facts"
-            android:id="@+id/engLitShowFacts" />
+            android:id="@+id/engLitTechniquesShowFacts" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="First Person"
-            android:id="@+id/engLitShowFirstPerson" />
+            android:id="@+id/engLitTechniquesShowFirstPerson" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Humour"
-            android:id="@+id/engLitShowHumour" />
+            android:id="@+id/engLitTechniquesShowHumour" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Hyperbole"
-            android:id="@+id/engLitShowHyperbole" />
+            android:id="@+id/engLitTechniquesShowHyperbole" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Imagery"
-            android:id="@+id/engLitShowImagery" />
+            android:id="@+id/engLitTechniquesShowImagery" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Metaphor"
-            android:id="@+id/engLitShowMetaphor" />
+            android:id="@+id/engLitTechniquesShowMetaphor" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Opinion"
-            android:id="@+id/engLitShowOpinion" />
+            android:id="@+id/engLitTechniquesShowOpinion" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Personification"
-            android:id="@+id/engLitShowPersonification" />
+            android:id="@+id/engLitTechniquesShowPersonification" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Repitition"
-            android:id="@+id/engLitShowRepitition" />
+            android:id="@+id/engLitTechniquesShowRepitition" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Rhetorical Questions"
-            android:id="@+id/engLitShowRhetoricalQuestions" />
+            android:id="@+id/engLitTechniquesShowRhetoricalQuestions" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Simile"
-            android:id="@+id/engLitShowSimile" />
+            android:id="@+id/engLitTechniquesShowSimile" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Statistics"
-            android:id="@+id/engLitShowStatistics" />
+            android:id="@+id/engLitTechniquesShowStatistics" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Third Person"
-            android:id="@+id/engLitShowThirdPerson" />
+            android:id="@+id/engLitTechniquesShowThirdPerson" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Tone"
-            android:id="@+id/engLitShowTone" />
+            android:id="@+id/engLitTechniquesShowTone" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Triplets"
-            android:id="@+id/engLitShowTriplets" />
+            android:id="@+id/engLitTechniquesShowTriplets" />
         <View
             style="@style/LargeDivider"
             android:layout_marginTop="0dp" />
@@ -171,121 +171,121 @@
         <TextView
             style="@style/maths_def"
             android:text="Allegory"
-            android:id="@+id/engLitShowAllegory" />
+            android:id="@+id/engLitTechniquesShowAllegory" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Anecdote"
-            android:id="@+id/engLitShowAnecdote" />
+            android:id="@+id/engLitTechniquesShowAnecdote" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Assonance"
-            android:id="@+id/engLitShowAssonance" />
+            android:id="@+id/engLitTechniquesShowAssonance" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Caesura"
-            android:id="@+id/engLitShowCaesura" />
+            android:id="@+id/engLitTechniquesShowCaesura" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Cliché"
-            android:id="@+id/engLitShowCliche" />
+            android:id="@+id/engLitTechniquesShowCliche" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Consonance"
-            android:id="@+id/engLitShowConsonance" />
+            android:id="@+id/engLitTechniquesShowConsonance" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="End Stopping"
-            android:id="@+id/engLitShowEndStopping" />
+            android:id="@+id/engLitTechniquesShowEndStopping" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Extended Metaphor"
-            android:id="@+id/engLitShowExtendedMetaphor" />
+            android:id="@+id/engLitTechniquesShowExtendedMetaphor" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Juxtaposition"
-            android:id="@+id/engLitShowJuxtaposition" />
+            android:id="@+id/engLitTechniquesShowJuxtaposition" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Motif"
-            android:id="@+id/engLitShowMotif" />
+            android:id="@+id/engLitTechniquesShowMotif" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Onomatopoeia"
-            android:id="@+id/engLitShowOnomatopoeia" />
+            android:id="@+id/engLitTechniquesShowOnomatopoeia" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Oxymoron"
-            android:id="@+id/engLitShowOxymoron" />
+            android:id="@+id/engLitTechniquesShowOxymoron" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Pathetic Fallacy"
-            android:id="@+id/engLitShowPatheticFallacy" />
+            android:id="@+id/engLitTechniquesShowPatheticFallacy" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Protagonist"
-            android:id="@+id/engLitShowProtagonist" />
+            android:id="@+id/engLitTechniquesShowProtagonist" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Second Person"
-            android:id="@+id/engLitShowSecondPerson" />
+            android:id="@+id/engLitTechniquesShowSecondPerson" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Sensory Detail Imagery"
-            android:id="@+id/engLitShowSensoryDetailImagery" />
+            android:id="@+id/engLitTechniquesShowSensoryDetailImagery" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Sibilance"
-            android:id="@+id/engLitShowSibilance" />
+            android:id="@+id/engLitTechniquesShowSibilance" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Superlative"
-            android:id="@+id/engLitShowSuperlative" />
+            android:id="@+id/engLitTechniquesShowSuperlative" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Symbolism"
-            android:id="@+id/engLitShowSymbolism" />
+            android:id="@+id/engLitTechniquesShowSymbolism" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
             android:text="Tense"
-            android:id="@+id/engLitShowTense" />
+            android:id="@+id/engLitTechniquesShowTense" />
         <View
             style="@style/itemSeparator" />
     </LinearLayout>
