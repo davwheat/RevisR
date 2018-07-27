@@ -68,15 +68,18 @@
     <item name="android:layout_marginRight">15dp</item>
     <item name="android:textStyle">bold</item>
     <item name="android:textSize">17.5dp</item>
+    <item name="android:textColor">#000</item>
   </style>
   <style name="text">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textAlignment">center</item>
-    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:layout_marginTop">5dp</item>
+    <item name="android:layout_marginBottom">5dp</item>
     <item name="android:layout_marginLeft">10dp</item>
     <item name="android:layout_marginRight">10dp</item>
     <item name="android:textSize">13dp</item>
+    <item name="android:textColor">#222</item>
   </style>
   <style name="maths_def">
     <item name="android:layout_width">match_parent</item>
@@ -93,5 +96,36 @@
     <item name="android:background">?android:attr/selectableItemBackground</item>
     <item name="android:textColor">#000</item>
     <item name="android:textStyle">bold</item>
+  </style>
+  <style name="elv_parent">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:layout_margin">0dp</item>
+    <item name="android:paddingTop">15dp</item>
+    <item name="android:paddingBottom">15dp</item>
+    <item name="android:paddingLeft">20dp</item>
+    <item name="android:paddingRight">20dp</item>
+    <item name="android:textSize">17.5dp</item>
+    <item name="android:clickable">true</item>
+    <item name="android:focusable">true</item>
+    <item name="android:background">?android:attr/selectableItemBackground</item>
+    <item name="android:textColor">#000</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+  <style name="elv_child">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:layout_margin">0dp</item>
+    <item name="android:paddingTop">15dp</item>
+    <item name="android:paddingBottom">15dp</item>
+    <item name="android:paddingLeft">20dp</item>
+    <item name="android:paddingRight">20dp</item>
+    <item name="android:textSize">15dp</item>
+    <item name="android:clickable">true</item>
+    <item name="android:focusable">true</item>
+    <item name="android:background">?android:attr/selectableItemBackground</item>
+    <item name="android:textColor">#222</item>
   </style>
 </resources>

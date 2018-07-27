@@ -15,6 +15,7 @@ namespace RevisR.Fragments.English.Literature
             view = inflater.Inflate(Resource.Layout.english_lit, container, false);
 
             ((TextView)view.FindViewById(Resource.Id.engLitTechniquesButton)).Click += openEnglishTechniques;
+            ((TextView)view.FindViewById(Resource.Id.engLitPunctuationButton)).Click += openEnglishPunctuation;
 
             return view;
         }
@@ -22,6 +23,15 @@ namespace RevisR.Fragments.English.Literature
         public void openEnglishTechniques(object sender, EventArgs e)
         {
             Fragment fragment = new EnglishLitTechniquesFragment();
+            var fragmentTransaction = FragmentManager.BeginTransaction();
+            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            fragmentTransaction.AddToBackStack(null);
+            fragmentTransaction.Commit();
+        }
+
+        public void openEnglishPunctuation(object sender, EventArgs e)
+        {
+            Fragment fragment = new EnglishLitPunctuationFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
