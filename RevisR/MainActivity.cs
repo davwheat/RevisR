@@ -72,8 +72,21 @@ namespace RevisR
             {
                 closeApplication();
             }
+            else if (id == Resource.Id.action_home)
+            {
+                goHome();
+            }
 
             return base.OnOptionsItemSelected(item);
+        }
+
+        public void goHome()
+        {
+            var fragment = new Fragments.HomeFragment();
+            var fragmentTransaction = FragmentManager.BeginTransaction();
+            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            fragmentTransaction.AddToBackStack(null);
+            fragmentTransaction.Commit();
         }
 
         public bool OnNavigationItemSelected(IMenuItem item)
