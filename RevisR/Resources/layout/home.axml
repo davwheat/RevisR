@@ -1,39 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp">
-    <TextView
-        android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:textAlignment="center"
-        android:layout_marginTop="10.0dp"
-        android:text="@string/home_title"
-        android:drawableTintMode="src_in"
-        android:textStyle="bold"
-        android:textSize="30.0dp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:textAlignment="center"
-        android:text="@string/home_tag"
-        android:drawableTintMode="src_in"
-        android:textStyle="bold"
-        android:layout_marginTop="5.0dp"
-        android:textSize="20.0dp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:textAlignment="center"
-        android:text="@string/home_howto"
-        android:drawableTintMode="src_in"
-        android:textStyle="bold"
-        android:layout_marginTop="10.0dp"
-        android:textSize="15.0dp" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textAlignment="center"
+            android:layout_marginTop="10.0dp"
+            android:text="@string/home_title"
+            android:drawableTintMode="src_in"
+            android:textStyle="bold"
+            android:textSize="30.0dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textAlignment="center"
+            android:text="@string/home_tag"
+            android:drawableTintMode="src_in"
+            android:textStyle="bold"
+            android:layout_marginTop="5.0dp"
+            android:textSize="20.0dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textAlignment="center"
+            android:text="@string/home_howto"
+            android:drawableTintMode="src_in"
+            android:textStyle="bold"
+            android:layout_marginTop="10.0dp"
+            android:textSize="15.0dp" />
+        <View
+            style="@style/LargeDivider" />
+        <TextView
+            android:id="@+id/home_english"
+            style="@style/maths_def"
+            android:text="@string/nav_english" />
+        <View
+            style="@style/Divider" />
+        <TextView
+            android:id="@+id/home_maths"
+            style="@style/maths_def"
+            android:text="@string/nav_maths" />
+        <View
+            style="@style/Divider" />
+        <TextView
+            android:id="@+id/home_geography"
+            style="@style/maths_def"
+            android:text="@string/nav_geography" />
+        <View
+            style="@style/Divider" />
+        <TextView
+            android:id="@+id/home_history"
+            style="@style/maths_def"
+            android:text="@string/nav_history" />
+        <View
+            style="@style/Divider" />
+        <TextView
+            android:id="@+id/home_computing"
+            style="@style/maths_def"
+            android:text="@string/nav_computing" />
+        <View
+            style="@style/Divider" />
+    </LinearLayout>
+</ScrollView>
