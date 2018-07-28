@@ -22,7 +22,7 @@ namespace RevisR.Fragments.English.Literature
 
         public void openEnglishTechniques(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLitTechniquesFragment();
+            Fragment fragment = new Pages.EnglishLitTechniquesFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
@@ -31,7 +31,7 @@ namespace RevisR.Fragments.English.Literature
 
         public void openEnglishPunctuation(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLitPunctuationFragment();
+            Fragment fragment = new Pages.EnglishLitPunctuationFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);

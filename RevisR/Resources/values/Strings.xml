@@ -97,4 +97,24 @@
   <string name="maths_home_definitions">Key definitions</string>
 
   <string name="maths_definitions_subtitle">Definition List</string>
+  
+  <!-- COMPUTING -->
+  <string name="computing_title">Computer Studies</string>
+  <string name="computing_home_subtitle">Choose an option:</string>
+
+  <string name="computing_hardware_title">Computer Hardware</string>
+  <string name="computing_software_title">Computer Software</string>
+  <string name="computing_operatingsystems_title">Operating Systems</string>
+  <string name="computing_binary_title">Binary</string>
+  <string name="computing_hexadecimal_title">Hexadecimal</string>
+  
+  <!-- Hardware -->
+  <string name="computing_hardware_cpu_title">Central Processing Unit (CPU)</string>
+  <string name="computing_hardware_gpu_title">Graphical Processing Unit (GPU)</string>
+  <string name="computing_hardware_motherboard_title">Motherboard</string>
+  <string name="computing_hardware_hdd_title">Hard Disk Drive (HDD)</string>
+  <string name="computing_hardware_ssd_title">Solid State Drive (SSD)</string>
+  <string name="computing_hardware_ram_title">Random Access Memory (RAM)</string>
+  <string name="computing_hardware_case_title">Case</string>
+  <string name="computing_hardware_psu_title">Power Supply (PSU)</string>
 </resources>

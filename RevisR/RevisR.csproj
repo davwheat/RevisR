@@ -112,14 +112,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomExpandableListAdaptor.cs" />
+    <Compile Include="Fragments\Computing\Hardware\ComputingHardwareFragment.cs" />
+    <Compile Include="Fragments\Computing\ComputingHomeFragment.cs" />
+    <Compile Include="Fragments\Computing\Hardware\Pages\ComputingCpuFragment.cs" />
     <Compile Include="Fragments\English\Language\EnglishLangHomeFragment.cs" />
-    <Compile Include="Fragments\English\Language\EnglishLangPaper1aFragment.cs" />
-    <Compile Include="Fragments\English\Language\EnglishLangPaper1bFragment.cs" />
-    <Compile Include="Fragments\English\Language\EnglishLangPaper2aFragment.cs" />
-    <Compile Include="Fragments\English\Language\EnglishLangPaper2bFragment.cs" />
+    <Compile Include="Fragments\English\Language\Pages\Papers\EnglishLangPaper1aFragment.cs" />
+    <Compile Include="Fragments\English\Language\Pages\Papers\EnglishLangPaper1bFragment.cs" />
+    <Compile Include="Fragments\English\Language\Pages\Papers\EnglishLangPaper2aFragment.cs" />
+    <Compile Include="Fragments\English\Language\Pages\Papers\EnglishLangPaper2bFragment.cs" />
     <Compile Include="Fragments\English\Literature\EnglishLitHomeFragment.cs" />
-    <Compile Include="Fragments\English\Literature\EnglishLitPunctuationFragment.cs" />
-    <Compile Include="Fragments\English\Literature\EnglishLitTechniquesFragment.cs" />
+    <Compile Include="Fragments\English\Literature\Pages\EnglishLitPunctuationFragment.cs" />
+    <Compile Include="Fragments\English\Literature\Pages\EnglishLitTechniquesFragment.cs" />
     <Compile Include="Fragments\HomeFragment.cs" />
     <Compile Include="Fragments\English\EnglishHomeFragment.cs" />
     <Compile Include="MainActivity.cs" />
@@ -138,15 +141,89 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_main.axml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>content_main.axml</DependentUpon>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\app_bar_main.axml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>content_main.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\computing_hardware.axml">
+      <SubType>Designer</SubType>
+      <DependentUpon>computing_home.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\computing_hardware_cpu.axml">
+      <SubType>Designer</SubType>
+      <DependentUpon>computing_hardware.axml</DependentUpon>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\content_main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\english_lang.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>english_home.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\english_lit.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>english_home.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\english_lit_punctuation.axml">
+      <DependentUpon>english_lit.axml</DependentUpon>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\english_lit_techniques.axml">
+      <DependentUpon>english_lit.axml</DependentUpon>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\english_paper1a.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>english_lang.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\english_paper1b.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>english_lang.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\english_paper2a.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>english_lang.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\english_paper2b.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>english_lang.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\expandablelistview_child.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>content_main.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\expandablelistview_parent.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>content_main.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\home.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>content_main.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\maths_def.axml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>maths_home.axml</DependentUpon>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\nav_header_main.axml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <DependentUpon>content_main.axml</DependentUpon>
     </AndroidResource>
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
@@ -194,28 +271,13 @@
     <AndroidResource Include="Resources\drawable\menu_maths.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\home.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\menu_home.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\menu_english.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\english_lit.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\maths_home.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\maths_def.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -225,38 +287,7 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\english_lang.axml">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\english_paper1a.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\english_paper1b.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\english_paper2a.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\english_paper2b.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\menu_computing.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\english_lit_techniques.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fragments\Humanities\Geography\" />
@@ -267,18 +298,9 @@
     <AndroidResource Include="Resources\drawable\menu_info.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\english_lit_punctuation.axml">
+    <AndroidResource Include="Resources\layout\computing_home.axml">
       <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\expandablelistview_parent.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\expandablelistview_child.axml">
-      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

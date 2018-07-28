@@ -10,11 +10,6 @@ namespace RevisR.Fragments.English.Language
     {
         private View view;
 
-        public override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-        }
-
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             view = inflater.Inflate(Resource.Layout.english_lang, container, false);
@@ -29,7 +24,7 @@ namespace RevisR.Fragments.English.Language
 
         public void openPaper1a(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangPaper1aFragment();
+            Fragment fragment = new Pages.Papers.EnglishLangPaper1aFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
@@ -38,7 +33,7 @@ namespace RevisR.Fragments.English.Language
 
         public void openPaper1b(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangPaper1bFragment();
+            Fragment fragment = new Pages.Papers.EnglishLangPaper1bFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
@@ -47,7 +42,7 @@ namespace RevisR.Fragments.English.Language
 
         public void openPaper2a(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangPaper2aFragment();
+            Fragment fragment = new Pages.Papers.EnglishLangPaper2aFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
@@ -56,7 +51,7 @@ namespace RevisR.Fragments.English.Language
 
         public void openPaper2b(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangPaper2bFragment();
+            Fragment fragment = new Pages.Papers.EnglishLangPaper2bFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
