@@ -148,6 +148,10 @@ namespace RevisR.Fragments.Maths
                     case "Percentage & Decimal Conversion":
                         ad.SetMessage("To convert a percentage to a decimal, divide by 100. To convert a decimal to a percentage multiply by 100.");
                         break;
+
+                    case "Fraction & Percentage Conversion":
+                        ad.SetMessage("To convert a fraction to a percentage, you can convert it to decimal and then to percentage or use equivilant fractions to get to a denominator of 100. To convert a percentage to a fraction convert the decimal value of the percentage to a fraction over 100/1000. E.g. 73% = 73/100 or 22.8% = 228/1000");
+                        break;
                 }
 
                 if (ad != null)
