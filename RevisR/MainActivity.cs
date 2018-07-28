@@ -72,8 +72,21 @@ namespace RevisR
             {
                 closeApplication();
             }
+            else if (id == Resource.Id.action_home)
+            {
+                goHome();
+            }
 
             return base.OnOptionsItemSelected(item);
+        }
+
+        public void goHome()
+        {
+            var fragment = new Fragments.HomeFragment();
+            var fragmentTransaction = FragmentManager.BeginTransaction();
+            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            fragmentTransaction.AddToBackStack(null);
+            fragmentTransaction.Commit();
         }
 
         public bool OnNavigationItemSelected(IMenuItem item)
@@ -102,6 +115,10 @@ namespace RevisR
                     break;
 
                 case Resource.Id.nav_history:
+                    break;
+
+                case Resource.Id.nav_computing:
+                    fragment = new Fragments.Computing.ComputingHomeFragment();
                     break;
 
                 case Resource.Id.nav_share:

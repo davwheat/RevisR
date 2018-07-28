@@ -1,43 +1,34 @@
-﻿using Android.App;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
 using Android.OS;
+using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using System;
-using System.Collections.Generic;
 
-namespace RevisR
+namespace RevisR.Fragments.Computing.Hardware.Pages
 {
-    public class EnglishLitPunctuationFragment : Fragment
+    class ComputingCpuFragment : Fragment
     {
         private View view;
-        private ExpandableListView punctuationList;
-
-        public override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-        }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.english_lit_punctuation, container, false);
+            view = inflater.Inflate(Resource.Layout.computing_hardware_cpu, container, false);
 
             // Set the punctuationList variable for use in other functions
-            punctuationList = (ExpandableListView)view.FindViewById(Resource.Id.engLitPunctuationExpandableList);
+            var hardwareExpandableList = (ExpandableListView)view.FindViewById(Resource.Id.computingHardwareCpuExpandableList);
 
-            fillListView();
-
-            return view;
-        }
-
-        public void fillListView()
-        {
-            // Types of punctuation
-            var punctuation = new List<string>
+            var headings = new List<string>
             {
-                "Apostrophe",
-                "Brackets",
-                "Colon",
-                "Comma",
+                "What is a CPU?",
+                "Main Components",
+                "Input, Process, Output Model",
+                "IPO Model Example",
                 "Dash",
                 "Ellipsis",
                 "Ellipsis (in quotations)",
@@ -49,13 +40,12 @@ namespace RevisR
                 "Question Mark",
             };
 
-            // Usage of the punctuation
-            var explanations = new List<List<string>>
+            var content = new List<List<string>>
             {
                 // \n is a new line
-                new List<string> { "You can use apostrophes to show possession.\nFor example: \"Malcom's cat was extremely friendly.\",\nor \"We took a day trip to Gibson's house.\"\n\nYou can also use them to show missing letter(s).\nFor Example: \"It doesn't matter.\",\nor \"I'm sorry.\"\n\nMore rarely, they can be used in some single letter plurals.\nFor Example: \"Don't forget your p's and q's.\",\nor \"Jason spells cook with two k's!\"" },
-                new List<string> { "There are two main types of brackets.\n\nRound brackets are mainly used to separate off information that isn't essential to the meaning of the rest of the sentence.\nFor example: \"He asked Sarah (his great-aunt) for a loan.\"\n\nSquare brackets are mainly used to enclose words added by someone other than the original writer or speaker, typically in order to clarify the situation.\nFor example: \"The witness said: 'Gary [Thompson] was not usually late for work.'\"" },
-                new List<string> { "You can use a colon between two main clauses where the second clause explains or follows from the first.\nFor example: \"We have a motto: live life to the full.\"\n\nYou can also use them to introduce a list.\nFor example: \"The cost of the room includes the following: breakfast, dinner, and Wi-Fi.\".\n\nMore rarely, they can be used before a quotation, and sometimes before direct speech: \"The headline read: 'Local Woman Saves Geese'.\"" },
+                new List<string> { "A central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions. The computer industry has used the term \"central processing unit\" at least since the early 1960s. Traditionally, the term \"CPU\" refers to a processor, more specifically to its processing unit and control unit (CU), distinguishing these core elements of a computer from external components such as main memory and I/O circuitry." },
+                new List<string> { "There are four main components of the CPU. There is the:\n  - Arithmatic Logic Unit\n - Control Unit\n - Clock\n - Bus" },
+                new List<string> { "This example represents a supermarket checkout computer system." },
                 new List<string> { "A comma marks a slight break between different parts of a sentence. There are four common occasions on which commas are necessary; see the 'Comma Use' page for more info.\n\nUsing commas in lists (e.g. The flag was red, white, and blue.)\nUsing commas in direct speech (e.g. 'That's not fair,' she said.)\nUsing commas to separate clauses (e.g. As we had already arrived, we were reluctant to wait.)\nUsing commas to mark off parts of a sentence (Her best friend, Eliza, sang for a living.) " },
                 new List<string> { "There are two main occasions on which a dash can be used, usually in informal writing.\n\nYou can use them to mark off information that is not essential to an understanding of the rest of the sentence.\nFor example: \"Many birds — do you like birds ? — can be seen outside the window.\"\n\nYou can also use them to show other kinds of break in a sentence where a comma, semicolon, or colon would be traditionally used.\nFor example: \"Tommy can't wait for Christmas — he's very excited.\"" },
                 new List<string> { "In informal writing, an ellipsis can be used to represent a trailing off of thought.\nFor example: \"If only she had ... Oh, it doesn't matter now.\"\n\nAn ellipsis can also indicate hesitation, though in this case the punctuation is more accurately described as suspension points.\nFor example: \"I wasn't really ... well, what I mean ... see, the thing is ... I didn't mean it.\"\n\nJust like the exclamation mark, the ellipsis is at risk of overuse." },
@@ -68,15 +58,22 @@ namespace RevisR
                 new List<string> { "A question mark is used to indicate the end of a question.\nFor example: \"What time are you going to the fair?\"\n\nA question mark can also be used in brackets to show that the writer is unconvinced by a statement.\nFor example: \"The bus timetable purports to be accurate(?).\"" },
             };
 
+            fillListView(hardwareExpandableList, headings, content);
+
+            return view;
+        }
+
+        public void fillListView(ExpandableListView elv, List<string> headings, List<List<string>> textContent)
+        {
             // Create dictionary with expandablelistview data
             var data = new Dictionary<string, List<string>>();
             // Add the data to the dictionary
-            foreach (var i in punctuation) { data.Add(i, explanations[punctuation.IndexOf(i)]); }
+            foreach (var i in headings) { data.Add(i, textContent[headings.IndexOf(i)]); }
 
             // Create ELV adapter using homebrewed class
-            IExpandableListAdapter adapter = new CustomExpandableListAdaptor(Context, punctuation, data);
+            IExpandableListAdapter adapter = new CustomExpandableListAdaptor(Context, headings, data);
             // Set the adapter
-            punctuationList.SetAdapter(adapter);
+            elv.SetAdapter(adapter);
         }
     }
 }

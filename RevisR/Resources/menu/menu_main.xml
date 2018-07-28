@@ -1,9 +1,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <item
-        android:id="@+id/action_exit"
-        android:orderInCategory="100"
-        android:title="@string/action_exit"
-        app:showAsAction="never" />
+  <item
+      android:id="@+id/action_home"
+      android:orderInCategory="100"
+      android:title="Home"
+      android:icon="@drawable/action_home_black"
+      app:showAsAction="ifRoom"
+      android:height="100dp"
+      android:width="100dp" />
+  <item
+      android:id="@+id/action_exit"
+      android:orderInCategory="200"
+      android:title="@string/action_exit"
+      app:showAsAction="never" />
 </menu>

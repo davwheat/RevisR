@@ -8,34 +8,40 @@
         android:layout_height="match_parent">
         <TextView
             style="@style/title"
-            android:text="@string/eng_lang_title" />
+            android:text="@string/computing_title" />
         <TextView
             style="@style/subtitle"
-            android:text="@string/eng_home_subtitle" />
+            android:text="@string/computing_home_subtitle" />
         <View
             style="@style/LargeDivider" />
         <TextView
             style="@style/maths_def"
-            android:text="@string/eng_lang_subtitle_paper1a"
-            android:id="@+id/engLangPaper1aButton" />
+            android:text="@string/computing_hardware_title"
+            android:id="@+id/computingHardwareButton" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
-            android:text="@string/eng_lang_subtitle_paper1b"
-            android:id="@+id/engLangPaper1bButton" />
+            android:text="@string/computing_software_title"
+            android:id="@+id/computingSoftwareButton" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
-            android:text="@string/eng_lang_subtitle_paper2a"
-            android:id="@+id/engLangPaper2aButton" />
+            android:text="@string/computing_operatingsystems_title"
+            android:id="@+id/computingOsButton" />
         <View
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
-            android:text="@string/eng_lang_subtitle_paper2b"
-            android:id="@+id/engLangPaper2bButton" />
+            android:text="@string/computing_binary_title"
+            android:id="@+id/computingBinaryButton" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/computing_hexadecimal_title"
+            android:id="@+id/computingHexadecimalButton" />
         <View
             style="@style/itemSeparator" />
     </LinearLayout>

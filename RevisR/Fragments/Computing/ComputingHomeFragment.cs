@@ -1,66 +1,68 @@
-﻿using Android.App;
+﻿using System;
+
+using Android.App;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 
-namespace RevisR.Fragments
+namespace RevisR.Fragments.Computing
 {
-    public class HomeFragment : Fragment
+    class ComputingHomeFragment : Fragment
     {
         private View view;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.home, container, false);
+            view = inflater.Inflate(Resource.Layout.computing_home, container, false);
 
-            ((TextView)view.FindViewById(Resource.Id.home_english)).Click += openEnglish;
-            ((TextView)view.FindViewById(Resource.Id.home_maths)).Click += openMaths;
-            ((TextView)view.FindViewById(Resource.Id.home_geography)).Click += openGeography;
-            ((TextView)view.FindViewById(Resource.Id.home_history)).Click += openHistory;
-            ((TextView)view.FindViewById(Resource.Id.home_computing)).Click += openComputing;
+            ((TextView)view.FindViewById(Resource.Id.computingHardwareButton)).Click += openComputingHardware;
+            ((TextView)view.FindViewById(Resource.Id.computingSoftwareButton)).Click += openComputingSoftware;
+            ((TextView)view.FindViewById(Resource.Id.computingOsButton)).Click += openComputingOperatingSystems;
+            ((TextView)view.FindViewById(Resource.Id.computingBinaryButton)).Click += openComputingBinary;
+            ((TextView)view.FindViewById(Resource.Id.computingHexadecimalButton)).Click += openComputingHexadecimal;
 
             return view;
         }
 
-        private void openComputing(object sender, System.EventArgs e)
+        public void openComputingHardware(object sender, EventArgs e)
         {
-            Fragment fragment = new Computing.ComputingHomeFragment();
+            Fragment fragment = new Hardware.ComputingHardwareFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
             fragmentTransaction.Commit();
         }
 
-        private void openHistory(object sender, System.EventArgs e)
+        public void openComputingSoftware(object sender, EventArgs e)
         {
-            Fragment fragment = new HomeFragment();
+            Fragment fragment = new Hardware.ComputingHardwareFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
             fragmentTransaction.Commit();
         }
 
-        private void openGeography(object sender, System.EventArgs e)
+        public void openComputingOperatingSystems(object sender, EventArgs e)
         {
-            Fragment fragment = new HomeFragment();
+            Fragment fragment = new Hardware.ComputingHardwareFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
             fragmentTransaction.Commit();
         }
 
-        private void openMaths(object sender, System.EventArgs e)
+        public void openComputingBinary(object sender, EventArgs e)
         {
-            Fragment fragment = new Maths.MathsHomeFragment();
+            Fragment fragment = new Hardware.ComputingHardwareFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
             fragmentTransaction.Commit();
         }
 
-        private void openEnglish(object sender, System.EventArgs e)
+        public void openComputingHexadecimal(object sender, EventArgs e)
         {
-            Fragment fragment = new English.EnglishHomeFragment();
+            Fragment fragment = new Hardware.ComputingHardwareFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
