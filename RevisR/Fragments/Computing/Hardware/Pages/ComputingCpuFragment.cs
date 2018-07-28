@@ -18,7 +18,7 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.english_lit_punctuation, container, false);
+            view = inflater.Inflate(Resource.Layout.computing_hardware_cpu, container, false);
 
             // Set the punctuationList variable for use in other functions
             var hardwareExpandableList = (ExpandableListView)view.FindViewById(Resource.Id.computingHardwareCpuExpandableList);
@@ -44,7 +44,7 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
             {
                 // \n is a new line
                 new List<string> { "A central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions. The computer industry has used the term \"central processing unit\" at least since the early 1960s. Traditionally, the term \"CPU\" refers to a processor, more specifically to its processing unit and control unit (CU), distinguishing these core elements of a computer from external components such as main memory and I/O circuitry." },
-                new List<string> { "There are four main components of the CPU. There is the:\n  - Arithmatic Logic Unit\n - Control Unit\n - Clock\n - Bus\n\n" },
+                new List<string> { "There are four main components of the CPU. There is the:\n  - Arithmatic Logic Unit\n - Control Unit\n - Clock\n - Bus" },
                 new List<string> { "This example represents a supermarket checkout computer system." },
                 new List<string> { "A comma marks a slight break between different parts of a sentence. There are four common occasions on which commas are necessary; see the 'Comma Use' page for more info.\n\nUsing commas in lists (e.g. The flag was red, white, and blue.)\nUsing commas in direct speech (e.g. 'That's not fair,' she said.)\nUsing commas to separate clauses (e.g. As we had already arrived, we were reluctant to wait.)\nUsing commas to mark off parts of a sentence (Her best friend, Eliza, sang for a living.) " },
                 new List<string> { "There are two main occasions on which a dash can be used, usually in informal writing.\n\nYou can use them to mark off information that is not essential to an understanding of the rest of the sentence.\nFor example: \"Many birds — do you like birds ? — can be seen outside the window.\"\n\nYou can also use them to show other kinds of break in a sentence where a comma, semicolon, or colon would be traditionally used.\nFor example: \"Tommy can't wait for Christmas — he's very excited.\"" },

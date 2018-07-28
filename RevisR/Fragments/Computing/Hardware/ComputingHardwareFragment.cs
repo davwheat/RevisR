@@ -13,27 +13,43 @@ namespace RevisR.Fragments.Computing.Hardware
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.computing_home, container, false);
+            view = inflater.Inflate(Resource.Layout.computing_hardware, container, false);
 
-            ((TextView)view.FindViewById(Resource.Id.computingHardwareCpuButton)).Click += openComputingHardwareCpu;
-            ((TextView)view.FindViewById(Resource.Id.computingHardwareGpuButton)).Click += openComputingHardwareGpu;
-            ((TextView)view.FindViewById(Resource.Id.computingHardwareMoboButton)).Click += openComputingHardwareMobo;
-            ((TextView)view.FindViewById(Resource.Id.computingHardwareHddButton)).Click += openComputingHardwareHdd;
-            ((TextView)view.FindViewById(Resource.Id.computingHardwareSsdButton)).Click += openComputingHardwareSsd;
-            ((TextView)view.FindViewById(Resource.Id.computingHardwareRamButton)).Click += openComputingHardwareRam;
-            ((TextView)view.FindViewById(Resource.Id.computingHardwareCaseButton)).Click += openComputingHardwareCase;
-            ((TextView)view.FindViewById(Resource.Id.computingHardwarePsuButton)).Click += openComputingHardwarePsu;
+            try
+            {
+                ((TextView)view.FindViewById(Resource.Id.computingHardwareCpuButton)).Click += openComputingHardwareCpu;
+                ((TextView)view.FindViewById(Resource.Id.computingHardwareGpuButton)).Click += openComputingHardwareGpu;
+                ((TextView)view.FindViewById(Resource.Id.computingHardwareMoboButton)).Click += openComputingHardwareMobo;
+                ((TextView)view.FindViewById(Resource.Id.computingHardwareHddButton)).Click += openComputingHardwareHdd;
+                ((TextView)view.FindViewById(Resource.Id.computingHardwareSsdButton)).Click += openComputingHardwareSsd;
+                ((TextView)view.FindViewById(Resource.Id.computingHardwareRamButton)).Click += openComputingHardwareRam;
+                ((TextView)view.FindViewById(Resource.Id.computingHardwareCaseButton)).Click += openComputingHardwareCase;
+                ((TextView)view.FindViewById(Resource.Id.computingHardwarePsuButton)).Click += openComputingHardwarePsu;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
 
             return view;
         }
 
         public void openComputingHardwareCpu(object sender, EventArgs e)
         {
-            Fragment fragment = new Pages.ComputingCpuFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            try
+            {
+                Fragment fragment = new Pages.ComputingCpuFragment();
+                var fragmentTransaction = FragmentManager.BeginTransaction();
+                fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+                fragmentTransaction.AddToBackStack(null);
+                fragmentTransaction.Commit();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void openComputingHardwareGpu(object sender, EventArgs e)

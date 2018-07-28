@@ -3,6 +3,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        style="@style/title"
+        android:text="@string/computing_hardware_cpu_title" />
+    <TextView
+        style="@style/subtitle"
+        android:text="@string/tap_to_expand" />
+    <View
+        style="@style/LargeDivider" />
     <ExpandableListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
