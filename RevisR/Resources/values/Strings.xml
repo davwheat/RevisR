@@ -15,6 +15,8 @@
   <string name="navigation_drawer_close">Close navigation drawer</string>
   <string name="action_exit">Exit</string>
 
+  <string name="tap_to_expand">Tap an option to expand it</string>
+
   <!-- Welcome Fragment -->
   <string name="home_title">Welcome to RevisR!</string>
   <string name="home_tag">Your free GCSE revision guide</string>

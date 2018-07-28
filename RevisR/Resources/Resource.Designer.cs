@@ -2237,121 +2237,124 @@ namespace RevisR
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int avd_hide_password = 2130837587;
-			
-			// aapt resource value: 0x7f020074
-			public const int avd_hide_password_1 = 2130837620;
-			
-			// aapt resource value: 0x7f020075
-			public const int avd_hide_password_2 = 2130837621;
-			
-			// aapt resource value: 0x7f020076
-			public const int avd_hide_password_3 = 2130837622;
+			public const int action_home_black = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int avd_show_password = 2130837588;
+			public const int avd_hide_password = 2130837588;
+			
+			// aapt resource value: 0x7f020075
+			public const int avd_hide_password_1 = 2130837621;
+			
+			// aapt resource value: 0x7f020076
+			public const int avd_hide_password_2 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int avd_show_password_1 = 2130837623;
-			
-			// aapt resource value: 0x7f020078
-			public const int avd_show_password_2 = 2130837624;
-			
-			// aapt resource value: 0x7f020079
-			public const int avd_show_password_3 = 2130837625;
+			public const int avd_hide_password_3 = 2130837623;
 			
 			// aapt resource value: 0x7f020055
-			public const int design_bottom_navigation_item_background = 2130837589;
+			public const int avd_show_password = 2130837589;
+			
+			// aapt resource value: 0x7f020078
+			public const int avd_show_password_1 = 2130837624;
+			
+			// aapt resource value: 0x7f020079
+			public const int avd_show_password_2 = 2130837625;
+			
+			// aapt resource value: 0x7f02007a
+			public const int avd_show_password_3 = 2130837626;
 			
 			// aapt resource value: 0x7f020056
-			public const int design_fab_background = 2130837590;
+			public const int design_bottom_navigation_item_background = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int design_ic_visibility = 2130837591;
+			public const int design_fab_background = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int design_ic_visibility_off = 2130837592;
+			public const int design_ic_visibility = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_password_eye = 2130837593;
+			public const int design_ic_visibility_off = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_snackbar_background = 2130837594;
+			public const int design_password_eye = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_menu_send = 2130837595;
+			public const int design_snackbar_background = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_menu_share = 2130837596;
+			public const int ic_menu_send = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int menu_computing = 2130837597;
+			public const int ic_menu_share = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int menu_english = 2130837598;
+			public const int menu_computing = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int menu_geography = 2130837599;
+			public const int menu_english = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int menu_history = 2130837600;
+			public const int menu_geography = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int menu_home = 2130837601;
+			public const int menu_history = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int menu_info = 2130837602;
+			public const int menu_home = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int menu_maths = 2130837603;
+			public const int menu_info = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int navigation_empty_icon = 2130837604;
+			public const int menu_maths = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int notification_action_background = 2130837605;
+			public const int navigation_empty_icon = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int notification_bg = 2130837606;
+			public const int notification_action_background = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int notification_bg_low = 2130837607;
+			public const int notification_bg = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int notification_bg_low_normal = 2130837608;
+			public const int notification_bg_low = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int notification_bg_low_pressed = 2130837609;
+			public const int notification_bg_low_normal = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int notification_bg_normal = 2130837610;
+			public const int notification_bg_low_pressed = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int notification_bg_normal_pressed = 2130837611;
+			public const int notification_bg_normal = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int notification_icon_background = 2130837612;
-			
-			// aapt resource value: 0x7f020072
-			public const int notification_template_icon_bg = 2130837618;
-			
-			// aapt resource value: 0x7f020073
-			public const int notification_template_icon_low_bg = 2130837619;
+			public const int notification_bg_normal_pressed = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int notification_tile_bg = 2130837613;
+			public const int notification_icon_background = 2130837613;
+			
+			// aapt resource value: 0x7f020073
+			public const int notification_template_icon_bg = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int notification_template_icon_low_bg = 2130837620;
 			
 			// aapt resource value: 0x7f02006e
-			public const int notify_panel_notification_icon_bg = 2130837614;
+			public const int notification_tile_bg = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int side_nav_bar = 2130837615;
+			public const int notify_panel_notification_icon_bg = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int tooltip_frame_dark = 2130837616;
+			public const int side_nav_bar = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int tooltip_frame_light = 2130837617;
+			public const int tooltip_frame_dark = 2130837617;
+			
+			// aapt resource value: 0x7f020072
+			public const int tooltip_frame_light = 2130837618;
 			
 			static Drawable()
 			{
@@ -2384,8 +2387,8 @@ namespace RevisR
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
 			
-			// aapt resource value: 0x7f0800ff
-			public const int action0 = 2131230975;
+			// aapt resource value: 0x7f080104
+			public const int action0 = 2131230980;
 			
 			// aapt resource value: 0x7f08007c
 			public const int action_bar = 2131230844;
@@ -2408,20 +2411,23 @@ namespace RevisR
 			// aapt resource value: 0x7f08005a
 			public const int action_bar_title = 2131230810;
 			
-			// aapt resource value: 0x7f0800fc
-			public const int action_container = 2131230972;
+			// aapt resource value: 0x7f080101
+			public const int action_container = 2131230977;
 			
 			// aapt resource value: 0x7f08007d
 			public const int action_context_bar = 2131230845;
 			
-			// aapt resource value: 0x7f080103
-			public const int action_divider = 2131230979;
+			// aapt resource value: 0x7f080108
+			public const int action_divider = 2131230984;
 			
-			// aapt resource value: 0x7f08011b
-			public const int action_exit = 2131231003;
+			// aapt resource value: 0x7f080121
+			public const int action_exit = 2131231009;
 			
-			// aapt resource value: 0x7f0800fd
-			public const int action_image = 2131230973;
+			// aapt resource value: 0x7f080120
+			public const int action_home = 2131231008;
+			
+			// aapt resource value: 0x7f080102
+			public const int action_image = 2131230978;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -2438,11 +2444,11 @@ namespace RevisR
 			// aapt resource value: 0x7f08005c
 			public const int action_mode_close_button = 2131230812;
 			
-			// aapt resource value: 0x7f0800fe
-			public const int action_text = 2131230974;
+			// aapt resource value: 0x7f080103
+			public const int action_text = 2131230979;
 			
-			// aapt resource value: 0x7f08010c
-			public const int actions = 2131230988;
+			// aapt resource value: 0x7f080111
+			public const int actions = 2131230993;
 			
 			// aapt resource value: 0x7f08005d
 			public const int activity_chooser_view_content = 2131230813;
@@ -2477,8 +2483,8 @@ namespace RevisR
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
 			
-			// aapt resource value: 0x7f080100
-			public const int cancel_action = 2131230976;
+			// aapt resource value: 0x7f080105
+			public const int cancel_action = 2131230981;
 			
 			// aapt resource value: 0x7f080045
 			public const int center = 2131230789;
@@ -2492,8 +2498,8 @@ namespace RevisR
 			// aapt resource value: 0x7f080073
 			public const int checkbox = 2131230835;
 			
-			// aapt resource value: 0x7f080108
-			public const int chronometer = 2131230984;
+			// aapt resource value: 0x7f08010d
+			public const int chronometer = 2131230989;
 			
 			// aapt resource value: 0x7f08004e
 			public const int clip_horizontal = 2131230798;
@@ -2567,68 +2573,68 @@ namespace RevisR
 			// aapt resource value: 0x7f080060
 			public const int default_activity_button = 2131230816;
 			
-			// aapt resource value: 0x7f0800f3
-			public const int define_bounds = 2131230963;
-			
-			// aapt resource value: 0x7f0800f2
-			public const int define_calcbounds = 2131230962;
-			
-			// aapt resource value: 0x7f0800e6
-			public const int define_cubenum = 2131230950;
-			
-			// aapt resource value: 0x7f0800f5
-			public const int define_dectofrac = 2131230965;
-			
-			// aapt resource value: 0x7f0800f1
-			public const int define_estimate = 2131230961;
-			
-			// aapt resource value: 0x7f0800ea
-			public const int define_factor = 2131230954;
-			
-			// aapt resource value: 0x7f0800f4
-			public const int define_fractodec = 2131230964;
+			// aapt resource value: 0x7f0800f8
+			public const int define_bounds = 2131230968;
 			
 			// aapt resource value: 0x7f0800f7
-			public const int define_fractopct = 2131230967;
-			
-			// aapt resource value: 0x7f0800ed
-			public const int define_hcf = 2131230957;
-			
-			// aapt resource value: 0x7f0800e3
-			public const int define_int = 2131230947;
-			
-			// aapt resource value: 0x7f0800ee
-			public const int define_lcm = 2131230958;
+			public const int define_calcbounds = 2131230967;
 			
 			// aapt resource value: 0x7f0800eb
-			public const int define_multiples = 2131230955;
+			public const int define_cubenum = 2131230955;
+			
+			// aapt resource value: 0x7f0800fa
+			public const int define_dectofrac = 2131230970;
 			
 			// aapt resource value: 0x7f0800f6
-			public const int define_pcttodec = 2131230966;
-			
-			// aapt resource value: 0x7f0800e7
-			public const int define_prime = 2131230951;
-			
-			// aapt resource value: 0x7f0800ec
-			public const int define_primefactors = 2131230956;
-			
-			// aapt resource value: 0x7f0800e8
-			public const int define_rational = 2131230952;
-			
-			// aapt resource value: 0x7f0800e9
-			public const int define_reciprocal = 2131230953;
+			public const int define_estimate = 2131230966;
 			
 			// aapt resource value: 0x7f0800ef
-			public const int define_rounddp = 2131230959;
+			public const int define_factor = 2131230959;
+			
+			// aapt resource value: 0x7f0800f9
+			public const int define_fractodec = 2131230969;
+			
+			// aapt resource value: 0x7f0800fc
+			public const int define_fractopct = 2131230972;
+			
+			// aapt resource value: 0x7f0800f2
+			public const int define_hcf = 2131230962;
+			
+			// aapt resource value: 0x7f0800e8
+			public const int define_int = 2131230952;
+			
+			// aapt resource value: 0x7f0800f3
+			public const int define_lcm = 2131230963;
 			
 			// aapt resource value: 0x7f0800f0
-			public const int define_roundsf = 2131230960;
+			public const int define_multiples = 2131230960;
 			
-			// aapt resource value: 0x7f0800e4
-			public const int define_sqnum = 2131230948;
+			// aapt resource value: 0x7f0800fb
+			public const int define_pcttodec = 2131230971;
 			
-			// aapt resource value: 0x7f0800e5
-			public const int define_sqroot = 2131230949;
+			// aapt resource value: 0x7f0800ec
+			public const int define_prime = 2131230956;
+			
+			// aapt resource value: 0x7f0800f1
+			public const int define_primefactors = 2131230961;
+			
+			// aapt resource value: 0x7f0800ed
+			public const int define_rational = 2131230957;
+			
+			// aapt resource value: 0x7f0800ee
+			public const int define_reciprocal = 2131230958;
+			
+			// aapt resource value: 0x7f0800f4
+			public const int define_rounddp = 2131230964;
+			
+			// aapt resource value: 0x7f0800f5
+			public const int define_roundsf = 2131230965;
+			
+			// aapt resource value: 0x7f0800e9
+			public const int define_sqnum = 2131230953;
+			
+			// aapt resource value: 0x7f0800ea
+			public const int define_sqroot = 2131230954;
 			
 			// aapt resource value: 0x7f0800a2
 			public const int design_bottom_sheet = 2131230882;
@@ -2663,8 +2669,8 @@ namespace RevisR
 			// aapt resource value: 0x7f080030
 			public const int end = 2131230768;
 			
-			// aapt resource value: 0x7f08010e
-			public const int end_padder = 2131230990;
+			// aapt resource value: 0x7f080113
+			public const int end_padder = 2131230995;
 			
 			// aapt resource value: 0x7f0800ad
 			public const int engLangPaper1aButton = 2131230893;
@@ -2861,11 +2867,26 @@ namespace RevisR
 			// aapt resource value: 0x7f080021
 			public const int homeAsUp = 2131230753;
 			
+			// aapt resource value: 0x7f0800e7
+			public const int home_computing = 2131230951;
+			
+			// aapt resource value: 0x7f0800e3
+			public const int home_english = 2131230947;
+			
+			// aapt resource value: 0x7f0800e5
+			public const int home_geography = 2131230949;
+			
+			// aapt resource value: 0x7f0800e6
+			public const int home_history = 2131230950;
+			
+			// aapt resource value: 0x7f0800e4
+			public const int home_maths = 2131230948;
+			
 			// aapt resource value: 0x7f080062
 			public const int icon = 2131230818;
 			
-			// aapt resource value: 0x7f08010d
-			public const int icon_group = 2131230989;
+			// aapt resource value: 0x7f080112
+			public const int icon_group = 2131230994;
 			
 			// aapt resource value: 0x7f08003a
 			public const int ifRoom = 2131230778;
@@ -2873,11 +2894,11 @@ namespace RevisR
 			// aapt resource value: 0x7f08005f
 			public const int image = 2131230815;
 			
-			// aapt resource value: 0x7f0800f9
-			public const int imageView = 2131230969;
+			// aapt resource value: 0x7f0800fe
+			public const int imageView = 2131230974;
 			
-			// aapt resource value: 0x7f080109
-			public const int info = 2131230985;
+			// aapt resource value: 0x7f08010e
+			public const int info = 2131230990;
 			
 			// aapt resource value: 0x7f080059
 			public const int italic = 2131230809;
@@ -2903,14 +2924,14 @@ namespace RevisR
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f080111
-			public const int masked = 2131230993;
+			// aapt resource value: 0x7f080116
+			public const int masked = 2131230998;
 			
-			// aapt resource value: 0x7f080102
-			public const int media_actions = 2131230978;
+			// aapt resource value: 0x7f080107
+			public const int media_actions = 2131230983;
 			
-			// aapt resource value: 0x7f08010f
-			public const int message = 2131230991;
+			// aapt resource value: 0x7f080114
+			public const int message = 2131230996;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2921,41 +2942,41 @@ namespace RevisR
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
-			// aapt resource value: 0x7f08011a
-			public const int nav_about = 2131231002;
+			// aapt resource value: 0x7f08011f
+			public const int nav_about = 2131231007;
 			
-			// aapt resource value: 0x7f080117
-			public const int nav_computing = 2131230999;
-			
-			// aapt resource value: 0x7f080113
-			public const int nav_english = 2131230995;
-			
-			// aapt resource value: 0x7f080119
-			public const int nav_feedback = 2131231001;
-			
-			// aapt resource value: 0x7f080115
-			public const int nav_geography = 2131230997;
-			
-			// aapt resource value: 0x7f080116
-			public const int nav_history = 2131230998;
-			
-			// aapt resource value: 0x7f080112
-			public const int nav_home = 2131230994;
-			
-			// aapt resource value: 0x7f080114
-			public const int nav_maths = 2131230996;
+			// aapt resource value: 0x7f08011c
+			public const int nav_computing = 2131231004;
 			
 			// aapt resource value: 0x7f080118
-			public const int nav_share = 2131231000;
+			public const int nav_english = 2131231000;
+			
+			// aapt resource value: 0x7f08011e
+			public const int nav_feedback = 2131231006;
+			
+			// aapt resource value: 0x7f08011a
+			public const int nav_geography = 2131231002;
+			
+			// aapt resource value: 0x7f08011b
+			public const int nav_history = 2131231003;
+			
+			// aapt resource value: 0x7f080117
+			public const int nav_home = 2131230999;
+			
+			// aapt resource value: 0x7f080119
+			public const int nav_maths = 2131231001;
+			
+			// aapt resource value: 0x7f08011d
+			public const int nav_share = 2131231005;
 			
 			// aapt resource value: 0x7f08008c
 			public const int nav_view = 2131230860;
 			
-			// aapt resource value: 0x7f0800fb
-			public const int navbar_subtitle = 2131230971;
+			// aapt resource value: 0x7f080100
+			public const int navbar_subtitle = 2131230976;
 			
-			// aapt resource value: 0x7f0800fa
-			public const int navbar_title = 2131230970;
+			// aapt resource value: 0x7f0800ff
+			public const int navbar_title = 2131230975;
 			
 			// aapt resource value: 0x7f0800a5
 			public const int navigation_header_container = 2131230885;
@@ -2969,14 +2990,14 @@ namespace RevisR
 			// aapt resource value: 0x7f08001e
 			public const int normal = 2131230750;
 			
-			// aapt resource value: 0x7f08010b
-			public const int notification_background = 2131230987;
+			// aapt resource value: 0x7f080110
+			public const int notification_background = 2131230992;
 			
-			// aapt resource value: 0x7f080105
-			public const int notification_main_column = 2131230981;
+			// aapt resource value: 0x7f08010a
+			public const int notification_main_column = 2131230986;
 			
-			// aapt resource value: 0x7f080104
-			public const int notification_main_column_container = 2131230980;
+			// aapt resource value: 0x7f080109
+			public const int notification_main_column_container = 2131230985;
 			
 			// aapt resource value: 0x7f08004c
 			public const int parallax = 2131230796;
@@ -3002,11 +3023,11 @@ namespace RevisR
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;
 			
-			// aapt resource value: 0x7f08010a
-			public const int right_icon = 2131230986;
+			// aapt resource value: 0x7f08010f
+			public const int right_icon = 2131230991;
 			
-			// aapt resource value: 0x7f080106
-			public const int right_side = 2131230982;
+			// aapt resource value: 0x7f08010b
+			public const int right_side = 2131230987;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -3077,8 +3098,8 @@ namespace RevisR
 			// aapt resource value: 0x7f080023
 			public const int showCustom = 2131230755;
 			
-			// aapt resource value: 0x7f0800f8
-			public const int showDefinitions = 2131230968;
+			// aapt resource value: 0x7f0800fd
+			public const int showDefinitions = 2131230973;
 			
 			// aapt resource value: 0x7f080024
 			public const int showHome = 2131230756;
@@ -3116,8 +3137,8 @@ namespace RevisR
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
-			// aapt resource value: 0x7f080101
-			public const int status_bar_latest_event_content = 2131230977;
+			// aapt resource value: 0x7f080106
+			public const int status_bar_latest_event_content = 2131230982;
 			
 			// aapt resource value: 0x7f080076
 			public const int submenuarrow = 2131230838;
@@ -3158,8 +3179,8 @@ namespace RevisR
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f080107
-			public const int time = 2131230983;
+			// aapt resource value: 0x7f08010c
+			public const int time = 2131230988;
 			
 			// aapt resource value: 0x7f08001c
 			public const int title = 2131230748;
@@ -3209,8 +3230,8 @@ namespace RevisR
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f080110
-			public const int visible = 2131230992;
+			// aapt resource value: 0x7f080115
+			public const int visible = 2131230997;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3673,212 +3694,212 @@ namespace RevisR
 			// aapt resource value: 0x7f090020
 			public const int character_counter_pattern = 2131296288;
 			
-			// aapt resource value: 0x7f09006e
-			public const int computing_binary_title = 2131296366;
-			
-			// aapt resource value: 0x7f090076
-			public const int computing_hardware_case_title = 2131296374;
-			
-			// aapt resource value: 0x7f090070
-			public const int computing_hardware_cpu_title = 2131296368;
-			
-			// aapt resource value: 0x7f090071
-			public const int computing_hardware_gpu_title = 2131296369;
-			
-			// aapt resource value: 0x7f090073
-			public const int computing_hardware_hdd_title = 2131296371;
-			
-			// aapt resource value: 0x7f090072
-			public const int computing_hardware_motherboard_title = 2131296370;
+			// aapt resource value: 0x7f09006f
+			public const int computing_binary_title = 2131296367;
 			
 			// aapt resource value: 0x7f090077
-			public const int computing_hardware_psu_title = 2131296375;
+			public const int computing_hardware_case_title = 2131296375;
 			
-			// aapt resource value: 0x7f090075
-			public const int computing_hardware_ram_title = 2131296373;
+			// aapt resource value: 0x7f090071
+			public const int computing_hardware_cpu_title = 2131296369;
+			
+			// aapt resource value: 0x7f090072
+			public const int computing_hardware_gpu_title = 2131296370;
 			
 			// aapt resource value: 0x7f090074
-			public const int computing_hardware_ssd_title = 2131296372;
+			public const int computing_hardware_hdd_title = 2131296372;
 			
-			// aapt resource value: 0x7f09006b
-			public const int computing_hardware_title = 2131296363;
+			// aapt resource value: 0x7f090073
+			public const int computing_hardware_motherboard_title = 2131296371;
 			
-			// aapt resource value: 0x7f09006f
-			public const int computing_hexadecimal_title = 2131296367;
+			// aapt resource value: 0x7f090078
+			public const int computing_hardware_psu_title = 2131296376;
 			
-			// aapt resource value: 0x7f09006a
-			public const int computing_home_subtitle = 2131296362;
+			// aapt resource value: 0x7f090076
+			public const int computing_hardware_ram_title = 2131296374;
 			
-			// aapt resource value: 0x7f09006d
-			public const int computing_operatingsystems_title = 2131296365;
+			// aapt resource value: 0x7f090075
+			public const int computing_hardware_ssd_title = 2131296373;
 			
 			// aapt resource value: 0x7f09006c
-			public const int computing_software_title = 2131296364;
+			public const int computing_hardware_title = 2131296364;
 			
-			// aapt resource value: 0x7f090069
-			public const int computing_title = 2131296361;
+			// aapt resource value: 0x7f090070
+			public const int computing_hexadecimal_title = 2131296368;
 			
-			// aapt resource value: 0x7f090037
-			public const int eng_home_subtitle = 2131296311;
+			// aapt resource value: 0x7f09006b
+			public const int computing_home_subtitle = 2131296363;
 			
-			// aapt resource value: 0x7f090036
-			public const int eng_home_title = 2131296310;
+			// aapt resource value: 0x7f09006e
+			public const int computing_operatingsystems_title = 2131296366;
 			
-			// aapt resource value: 0x7f09003b
-			public const int eng_lang_paper1a_q1 = 2131296315;
+			// aapt resource value: 0x7f09006d
+			public const int computing_software_title = 2131296365;
 			
-			// aapt resource value: 0x7f09003c
-			public const int eng_lang_paper1a_q1_para1 = 2131296316;
-			
-			// aapt resource value: 0x7f09003d
-			public const int eng_lang_paper1a_q2 = 2131296317;
-			
-			// aapt resource value: 0x7f09003e
-			public const int eng_lang_paper1a_q2_para1 = 2131296318;
-			
-			// aapt resource value: 0x7f09003f
-			public const int eng_lang_paper1a_q2_para2 = 2131296319;
-			
-			// aapt resource value: 0x7f090040
-			public const int eng_lang_paper1a_q3 = 2131296320;
-			
-			// aapt resource value: 0x7f090041
-			public const int eng_lang_paper1a_q3_para1 = 2131296321;
-			
-			// aapt resource value: 0x7f090042
-			public const int eng_lang_paper1a_q3_para2 = 2131296322;
-			
-			// aapt resource value: 0x7f090043
-			public const int eng_lang_paper1a_q3_para3 = 2131296323;
-			
-			// aapt resource value: 0x7f090044
-			public const int eng_lang_paper1a_q3_para4 = 2131296324;
-			
-			// aapt resource value: 0x7f090045
-			public const int eng_lang_paper1a_q3_para5 = 2131296325;
-			
-			// aapt resource value: 0x7f090046
-			public const int eng_lang_paper1a_q4 = 2131296326;
-			
-			// aapt resource value: 0x7f090047
-			public const int eng_lang_paper1a_q4_para1 = 2131296327;
-			
-			// aapt resource value: 0x7f090048
-			public const int eng_lang_paper1a_q4_para2 = 2131296328;
-			
-			// aapt resource value: 0x7f090049
-			public const int eng_lang_paper1a_q4_para3 = 2131296329;
-			
-			// aapt resource value: 0x7f09004a
-			public const int eng_lang_paper1a_q4_para4 = 2131296330;
-			
-			// aapt resource value: 0x7f09004c
-			public const int eng_lang_paper1b_q5 = 2131296332;
-			
-			// aapt resource value: 0x7f09004d
-			public const int eng_lang_paper1b_q5_para1 = 2131296333;
-			
-			// aapt resource value: 0x7f09004e
-			public const int eng_lang_paper1b_q5_para2 = 2131296334;
-			
-			// aapt resource value: 0x7f09004f
-			public const int eng_lang_paper1b_q5_para3 = 2131296335;
-			
-			// aapt resource value: 0x7f090050
-			public const int eng_lang_paper1b_q5_para4 = 2131296336;
-			
-			// aapt resource value: 0x7f090051
-			public const int eng_lang_paper1b_q5_para5 = 2131296337;
-			
-			// aapt resource value: 0x7f090053
-			public const int eng_lang_paper2a_q1 = 2131296339;
-			
-			// aapt resource value: 0x7f090054
-			public const int eng_lang_paper2a_q1_para1 = 2131296340;
-			
-			// aapt resource value: 0x7f090055
-			public const int eng_lang_paper2a_q2 = 2131296341;
-			
-			// aapt resource value: 0x7f090056
-			public const int eng_lang_paper2a_q2_para1 = 2131296342;
-			
-			// aapt resource value: 0x7f090057
-			public const int eng_lang_paper2a_q3 = 2131296343;
-			
-			// aapt resource value: 0x7f090058
-			public const int eng_lang_paper2a_q3_para1 = 2131296344;
-			
-			// aapt resource value: 0x7f090059
-			public const int eng_lang_paper2a_q3_para2 = 2131296345;
-			
-			// aapt resource value: 0x7f09005a
-			public const int eng_lang_paper2a_q4 = 2131296346;
-			
-			// aapt resource value: 0x7f09005b
-			public const int eng_lang_paper2a_q4_para1 = 2131296347;
-			
-			// aapt resource value: 0x7f09005c
-			public const int eng_lang_paper2a_q4_para2 = 2131296348;
-			
-			// aapt resource value: 0x7f09005d
-			public const int eng_lang_paper2a_q4_para3 = 2131296349;
-			
-			// aapt resource value: 0x7f09005f
-			public const int eng_lang_paper2b_q5 = 2131296351;
-			
-			// aapt resource value: 0x7f090060
-			public const int eng_lang_paper2b_q5_para1 = 2131296352;
-			
-			// aapt resource value: 0x7f090061
-			public const int eng_lang_paper2b_q5_para2 = 2131296353;
-			
-			// aapt resource value: 0x7f090062
-			public const int eng_lang_paper2b_q5_para3 = 2131296354;
-			
-			// aapt resource value: 0x7f09003a
-			public const int eng_lang_subtitle_paper1a = 2131296314;
-			
-			// aapt resource value: 0x7f09004b
-			public const int eng_lang_subtitle_paper1b = 2131296331;
-			
-			// aapt resource value: 0x7f090052
-			public const int eng_lang_subtitle_paper2a = 2131296338;
-			
-			// aapt resource value: 0x7f09005e
-			public const int eng_lang_subtitle_paper2b = 2131296350;
+			// aapt resource value: 0x7f09006a
+			public const int computing_title = 2131296362;
 			
 			// aapt resource value: 0x7f090038
-			public const int eng_lang_title = 2131296312;
+			public const int eng_home_subtitle = 2131296312;
 			
-			// aapt resource value: 0x7f090064
-			public const int eng_lit_subtitle_punctuation = 2131296356;
+			// aapt resource value: 0x7f090037
+			public const int eng_home_title = 2131296311;
+			
+			// aapt resource value: 0x7f09003c
+			public const int eng_lang_paper1a_q1 = 2131296316;
+			
+			// aapt resource value: 0x7f09003d
+			public const int eng_lang_paper1a_q1_para1 = 2131296317;
+			
+			// aapt resource value: 0x7f09003e
+			public const int eng_lang_paper1a_q2 = 2131296318;
+			
+			// aapt resource value: 0x7f09003f
+			public const int eng_lang_paper1a_q2_para1 = 2131296319;
+			
+			// aapt resource value: 0x7f090040
+			public const int eng_lang_paper1a_q2_para2 = 2131296320;
+			
+			// aapt resource value: 0x7f090041
+			public const int eng_lang_paper1a_q3 = 2131296321;
+			
+			// aapt resource value: 0x7f090042
+			public const int eng_lang_paper1a_q3_para1 = 2131296322;
+			
+			// aapt resource value: 0x7f090043
+			public const int eng_lang_paper1a_q3_para2 = 2131296323;
+			
+			// aapt resource value: 0x7f090044
+			public const int eng_lang_paper1a_q3_para3 = 2131296324;
+			
+			// aapt resource value: 0x7f090045
+			public const int eng_lang_paper1a_q3_para4 = 2131296325;
+			
+			// aapt resource value: 0x7f090046
+			public const int eng_lang_paper1a_q3_para5 = 2131296326;
+			
+			// aapt resource value: 0x7f090047
+			public const int eng_lang_paper1a_q4 = 2131296327;
+			
+			// aapt resource value: 0x7f090048
+			public const int eng_lang_paper1a_q4_para1 = 2131296328;
+			
+			// aapt resource value: 0x7f090049
+			public const int eng_lang_paper1a_q4_para2 = 2131296329;
+			
+			// aapt resource value: 0x7f09004a
+			public const int eng_lang_paper1a_q4_para3 = 2131296330;
+			
+			// aapt resource value: 0x7f09004b
+			public const int eng_lang_paper1a_q4_para4 = 2131296331;
+			
+			// aapt resource value: 0x7f09004d
+			public const int eng_lang_paper1b_q5 = 2131296333;
+			
+			// aapt resource value: 0x7f09004e
+			public const int eng_lang_paper1b_q5_para1 = 2131296334;
+			
+			// aapt resource value: 0x7f09004f
+			public const int eng_lang_paper1b_q5_para2 = 2131296335;
+			
+			// aapt resource value: 0x7f090050
+			public const int eng_lang_paper1b_q5_para3 = 2131296336;
+			
+			// aapt resource value: 0x7f090051
+			public const int eng_lang_paper1b_q5_para4 = 2131296337;
+			
+			// aapt resource value: 0x7f090052
+			public const int eng_lang_paper1b_q5_para5 = 2131296338;
+			
+			// aapt resource value: 0x7f090054
+			public const int eng_lang_paper2a_q1 = 2131296340;
+			
+			// aapt resource value: 0x7f090055
+			public const int eng_lang_paper2a_q1_para1 = 2131296341;
+			
+			// aapt resource value: 0x7f090056
+			public const int eng_lang_paper2a_q2 = 2131296342;
+			
+			// aapt resource value: 0x7f090057
+			public const int eng_lang_paper2a_q2_para1 = 2131296343;
+			
+			// aapt resource value: 0x7f090058
+			public const int eng_lang_paper2a_q3 = 2131296344;
+			
+			// aapt resource value: 0x7f090059
+			public const int eng_lang_paper2a_q3_para1 = 2131296345;
+			
+			// aapt resource value: 0x7f09005a
+			public const int eng_lang_paper2a_q3_para2 = 2131296346;
+			
+			// aapt resource value: 0x7f09005b
+			public const int eng_lang_paper2a_q4 = 2131296347;
+			
+			// aapt resource value: 0x7f09005c
+			public const int eng_lang_paper2a_q4_para1 = 2131296348;
+			
+			// aapt resource value: 0x7f09005d
+			public const int eng_lang_paper2a_q4_para2 = 2131296349;
+			
+			// aapt resource value: 0x7f09005e
+			public const int eng_lang_paper2a_q4_para3 = 2131296350;
+			
+			// aapt resource value: 0x7f090060
+			public const int eng_lang_paper2b_q5 = 2131296352;
+			
+			// aapt resource value: 0x7f090061
+			public const int eng_lang_paper2b_q5_para1 = 2131296353;
+			
+			// aapt resource value: 0x7f090062
+			public const int eng_lang_paper2b_q5_para2 = 2131296354;
 			
 			// aapt resource value: 0x7f090063
-			public const int eng_lit_subtitle_techniques = 2131296355;
+			public const int eng_lang_paper2b_q5_para3 = 2131296355;
+			
+			// aapt resource value: 0x7f09003b
+			public const int eng_lang_subtitle_paper1a = 2131296315;
+			
+			// aapt resource value: 0x7f09004c
+			public const int eng_lang_subtitle_paper1b = 2131296332;
+			
+			// aapt resource value: 0x7f090053
+			public const int eng_lang_subtitle_paper2a = 2131296339;
+			
+			// aapt resource value: 0x7f09005f
+			public const int eng_lang_subtitle_paper2b = 2131296351;
 			
 			// aapt resource value: 0x7f090039
-			public const int eng_lit_title = 2131296313;
-			
-			// aapt resource value: 0x7f090035
-			public const int home_howto = 2131296309;
-			
-			// aapt resource value: 0x7f090034
-			public const int home_tag = 2131296308;
-			
-			// aapt resource value: 0x7f090033
-			public const int home_title = 2131296307;
-			
-			// aapt resource value: 0x7f090068
-			public const int maths_definitions_subtitle = 2131296360;
-			
-			// aapt resource value: 0x7f090067
-			public const int maths_home_definitions = 2131296359;
-			
-			// aapt resource value: 0x7f090066
-			public const int maths_home_subtitle = 2131296358;
+			public const int eng_lang_title = 2131296313;
 			
 			// aapt resource value: 0x7f090065
-			public const int maths_title = 2131296357;
+			public const int eng_lit_subtitle_punctuation = 2131296357;
+			
+			// aapt resource value: 0x7f090064
+			public const int eng_lit_subtitle_techniques = 2131296356;
+			
+			// aapt resource value: 0x7f09003a
+			public const int eng_lit_title = 2131296314;
+			
+			// aapt resource value: 0x7f090036
+			public const int home_howto = 2131296310;
+			
+			// aapt resource value: 0x7f090035
+			public const int home_tag = 2131296309;
+			
+			// aapt resource value: 0x7f090034
+			public const int home_title = 2131296308;
+			
+			// aapt resource value: 0x7f090069
+			public const int maths_definitions_subtitle = 2131296361;
+			
+			// aapt resource value: 0x7f090068
+			public const int maths_home_definitions = 2131296360;
+			
+			// aapt resource value: 0x7f090067
+			public const int maths_home_subtitle = 2131296359;
+			
+			// aapt resource value: 0x7f090066
+			public const int maths_title = 2131296358;
 			
 			// aapt resource value: 0x7f09002e
 			public const int nav_computing = 2131296302;
@@ -3930,6 +3951,9 @@ namespace RevisR
 			
 			// aapt resource value: 0x7f090026
 			public const int status_bar_notification_info_overflow = 2131296294;
+			
+			// aapt resource value: 0x7f090033
+			public const int tap_to_expand = 2131296307;
 			
 			static String()
 			{

@@ -126,7 +126,7 @@
     <Compile Include="Fragments\HomeFragment.cs" />
     <Compile Include="Fragments\English\EnglishHomeFragment.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Fragments\Maths\MathsDefinitionsFragment.cs" />
+    <Compile Include="Fragments\Maths\Pages\MathsDefinitionsFragment.cs" />
     <Compile Include="Fragments\Maths\MathsHomeFragment.cs" />
     <None Include="packages.config" />
     <None Include="Resource.Designer.cs.old" />
@@ -302,6 +302,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\action_home_black.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets')" />
