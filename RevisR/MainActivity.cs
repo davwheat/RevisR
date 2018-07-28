@@ -104,6 +104,10 @@ namespace RevisR
                 case Resource.Id.nav_history:
                     break;
 
+                case Resource.Id.nav_computing:
+                    fragment = new Fragments.Computing.ComputingHomeFragment();
+                    break;
+
                 case Resource.Id.nav_share:
                     break;
 
