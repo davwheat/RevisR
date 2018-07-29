@@ -123,9 +123,9 @@
     <item name="android:paddingLeft">20dp</item>
     <item name="android:paddingRight">20dp</item>
     <item name="android:textSize">15dp</item>
-    <item name="android:clickable">true</item>
-    <item name="android:focusable">true</item>
-    <item name="android:background">?android:attr/selectableItemBackground</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+    <item name="android:background">?android:colorBackground</item>
     <item name="android:textColor">#222</item>
   </style>
 </resources>
