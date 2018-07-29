@@ -41,7 +41,7 @@ namespace RevisR.Fragments.Computing
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
+            Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => { try { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.Parse("mailto:"))) { StartActivity(Android.Content.Intent.CreateChooser(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822"), "Please select an email client...")); } } catch (Android.Content.ActivityNotFoundException ex) { Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show(); } }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
         }
 
         public void openComputingOperatingSystems(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace RevisR.Fragments.Computing
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
+            Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => { try { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.Parse("mailto:"))) { StartActivity(Android.Content.Intent.CreateChooser(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822"), "Please select an email client...")); } } catch (Android.Content.ActivityNotFoundException ex) { Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show(); } }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
         }
 
         public void openComputingBinary(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace RevisR.Fragments.Computing
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
+            Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => { try { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.Parse("mailto:"))) { StartActivity(Android.Content.Intent.CreateChooser(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822"), "Please select an email client...")); } } catch (Android.Content.ActivityNotFoundException ex) { Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show(); } }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
         }
 
         public void openComputingHexadecimal(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace RevisR.Fragments.Computing
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
+            Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => { try { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.Parse("mailto:"))) { StartActivity(Android.Content.Intent.CreateChooser(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822"), "Please select an email client...")); } } catch (Android.Content.ActivityNotFoundException ex) { Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show(); } }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
         }
     }
 }

@@ -146,7 +146,7 @@ namespace RevisR
             }
             else
             {
-                Snackbar.Make(FindViewById(Android.Resource.Id.Content), Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Intent(Intent.ActionSend)) { StartActivity(intent.PutExtra(Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
+                Snackbar.Make(FindViewById(Android.Resource.Id.Content), Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => { using (var intent = new Intent(Intent.ActionSend)) { StartActivity(intent.PutExtra(Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
                 return false;
             }
         }
