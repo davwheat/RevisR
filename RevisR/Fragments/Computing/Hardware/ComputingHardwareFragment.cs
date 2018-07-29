@@ -37,65 +37,72 @@ namespace RevisR.Fragments.Computing.Hardware
 
         public void openComputingHardwareGpu(object sender, EventArgs e)
         {
-            Fragment fragment = new Pages.ComputingCpuFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            //Fragment fragment = new Pages.ComputingCpuFragment();
+            //var fragmentTransaction = FragmentManager.BeginTransaction();
+            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            //fragmentTransaction.AddToBackStack(null);
+            //fragmentTransaction.Commit();
+            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
         }
 
         public void openComputingHardwareMobo(object sender, EventArgs e)
         {
-            Fragment fragment = new Pages.ComputingCpuFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            //Fragment fragment = new Pages.ComputingCpuFragment();
+            //var fragmentTransaction = FragmentManager.BeginTransaction();
+            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            //fragmentTransaction.AddToBackStack(null);
+            //fragmentTransaction.Commit();
+            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
         }
 
         public void openComputingHardwareHdd(object sender, EventArgs e)
         {
-            Fragment fragment = new Pages.ComputingCpuFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            //Fragment fragment = new Pages.ComputingCpuFragment();
+            //var fragmentTransaction = FragmentManager.BeginTransaction();
+            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            //fragmentTransaction.AddToBackStack(null);
+            //fragmentTransaction.Commit();
+            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
         }
 
         public void openComputingHardwareSsd(object sender, EventArgs e)
         {
-            Fragment fragment = new Pages.ComputingCpuFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            //Fragment fragment = new Pages.ComputingCpuFragment();
+            //var fragmentTransaction = FragmentManager.BeginTransaction();
+            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            //fragmentTransaction.AddToBackStack(null);
+            //fragmentTransaction.Commit();
+            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
         }
 
         public void openComputingHardwareRam(object sender, EventArgs e)
         {
-            Fragment fragment = new Pages.ComputingCpuFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            //Fragment fragment = new Pages.ComputingCpuFragment();
+            //var fragmentTransaction = FragmentManager.BeginTransaction();
+            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            //fragmentTransaction.AddToBackStack(null);
+            //fragmentTransaction.Commit();
+            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
         }
 
         public void openComputingHardwareCase(object sender, EventArgs e)
         {
-            Fragment fragment = new Pages.ComputingCpuFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            //Fragment fragment = new Pages.ComputingCpuFragment();
+            //var fragmentTransaction = FragmentManager.BeginTransaction();
+            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            //fragmentTransaction.AddToBackStack(null);
+            //fragmentTransaction.Commit();
+            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
         }
 
         public void openComputingHardwarePsu(object sender, EventArgs e)
         {
-            Fragment fragment = new Pages.ComputingCpuFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            //Fragment fragment = new Pages.ComputingCpuFragment();
+            //var fragmentTransaction = FragmentManager.BeginTransaction();
+            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            //fragmentTransaction.AddToBackStack(null);
+            //fragmentTransaction.Commit();
+            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Android.Content.Intent(Android.Content.Intent.ActionSend)) { StartActivity(intent.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Android.Content.Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Android.Content.Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
         }
     }
 }

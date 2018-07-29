@@ -80,6 +80,7 @@
     <Compile Include="Fragments\English\Literature\Pages\EnglishLitTechniquesFragment.cs" />
     <Compile Include="Fragments\HomeFragment.cs" />
     <Compile Include="Fragments\English\EnglishHomeFragment.cs" />
+    <Compile Include="Localisation.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Fragments\Maths\Pages\MathsDefinitionsFragment.cs" />
     <Compile Include="Fragments\Maths\MathsHomeFragment.cs" />

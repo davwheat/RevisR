@@ -38,10 +38,10 @@ namespace RevisR
         {
             var email = new Intent(Intent.ActionSend);
             email.PutExtra(Intent.ExtraEmail, new string[] {
-                "davidwheatley03@gmail.com"
+                Localisation.feedbackEmail
             });
-            email.PutExtra(Intent.ExtraSubject, "RevisR Feedback");
-            email.PutExtra(Intent.ExtraText, "Please enter the feedback you would like to give...");
+            email.PutExtra(Intent.ExtraSubject, Localisation.feedbackSubject);
+            email.PutExtra(Intent.ExtraText, Localisation.feedbackBody);
             email.SetType("message/rfc822");
             StartActivity(email);
         }
@@ -146,7 +146,7 @@ namespace RevisR
             }
             else
             {
-                Snackbar.Make(FindViewById(Android.Resource.Id.Content), "Work in progress", 0).Show();
+                Snackbar.Make(FindViewById(Android.Resource.Id.Content), Localisation.snackbarComingSoon, 0).SetAction("Ok", (v) => { using (var intent = new Intent(Intent.ActionSend)) { StartActivity(intent.PutExtra(Intent.ExtraEmail, new string[] { Localisation.feedbackEmail }).PutExtra(Intent.ExtraSubject, Localisation.feedbackSubject).PutExtra(Intent.ExtraText, Localisation.feedbackBody).SetType("message/rfc822")); } }).SetActionTextColor(Android.Graphics.Color.Blue).Show();
                 return false;
             }
         }
