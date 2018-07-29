@@ -3,25 +3,19 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/scrollView1">
+    android:layout_height="wrap_content">
     <LinearLayout
         android:orientation="vertical"
-        android:minWidth="25px"
-        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/linearLayout1">
+        android:layout_height="match_parent">
         <TextView
             style="@style/title"
-            android:text="@string/maths_title"
-            android:id="@+id/textView2" />
+            android:text="@string/maths_title" />
         <TextView
             style="@style/subtitle"
-            android:text="@string/maths_definitions_subtitle"
-            android:id="@+id/textView2" />
+            android:text="@string/maths_definitions_subtitle" />
         <View
-            style="@style/Divider" />
+            style="@style/LargeDivider" />
         <TextView
             style="@style/maths_def"
             android:text="Integers"
@@ -42,7 +36,7 @@
             style="@style/itemSeparator" />
         <TextView
             style="@style/maths_def"
-            android:text="Cube Numbers/Root"
+            android:text="Cube Numbers/Roots"
             android:id="@+id/define_cubenum" />
         <View
             style="@style/itemSeparator" />

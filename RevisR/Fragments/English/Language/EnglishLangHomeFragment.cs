@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.OS;
+using Android.Support.Design.Widget;
 using Android.Views;
 using Android.Widget;
 using System;
@@ -9,11 +10,6 @@ namespace RevisR.Fragments.English.Language
     public class EnglishLangHomeFragment : Fragment
     {
         private View view;
-
-        public override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-        }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -29,7 +25,7 @@ namespace RevisR.Fragments.English.Language
 
         public void openPaper1a(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangPaper1aFragment();
+            Fragment fragment = new Pages.Papers.EnglishLangPaper1aFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
@@ -38,7 +34,7 @@ namespace RevisR.Fragments.English.Language
 
         public void openPaper1b(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangPaper1bFragment();
+            Fragment fragment = new Pages.Papers.EnglishLangPaper1bFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);
@@ -47,20 +43,48 @@ namespace RevisR.Fragments.English.Language
 
         public void openPaper2a(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangPaper2aFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            //Fragment fragment = new Pages.Papers.EnglishLangPaper2aFragment();
+            //var fragmentTransaction = FragmentManager.BeginTransaction();
+            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            //fragmentTransaction.AddToBackStack(null);
+            //fragmentTransaction.Commit();
+            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
+                var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
+                intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
+                intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
+
+                try
+                {
+                    StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
+                }
+                catch (Android.Content.ActivityNotFoundException ex)
+                {
+                    Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show();
+                }
+            }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
         }
 
         public void openPaper2b(object sender, EventArgs e)
         {
-            Fragment fragment = new EnglishLangPaper2bFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+            //Fragment fragment = new Pages.Papers.EnglishLangPaper2bFragment();
+            //var fragmentTransaction = FragmentManager.BeginTransaction();
+            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            //fragmentTransaction.AddToBackStack(null);
+            //fragmentTransaction.Commit();
+            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
+                var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
+                intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
+                intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
+
+                try
+                {
+                    StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
+                }
+                catch (Android.Content.ActivityNotFoundException ex)
+                {
+                    Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show();
+                }
+            }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
         }
     }
 }

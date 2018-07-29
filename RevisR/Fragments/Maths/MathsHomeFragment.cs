@@ -9,11 +9,6 @@ namespace RevisR.Fragments.Maths
     {
         private View view;
 
-        public override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-        }
-
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             view = inflater.Inflate(Resource.Layout.maths_home, container, false);
@@ -29,7 +24,7 @@ namespace RevisR.Fragments.Maths
 
         public void openMathsDefinitions(object sender, EventArgs e)
         {
-            Fragment fragment = new MathsDefinitionsFragment();
+            Fragment fragment = new Pages.MathsDefinitionsFragment();
             var fragmentTransaction = FragmentManager.BeginTransaction();
             fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             fragmentTransaction.AddToBackStack(null);

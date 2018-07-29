@@ -2,37 +2,22 @@
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using System;
 using System.Collections.Generic;
 
-namespace RevisR
+namespace RevisR.Fragments.English.Literature.Pages
 {
     public class EnglishLitPunctuationFragment : Fragment
     {
         private View view;
-        private ExpandableListView punctuationList;
-
-        public override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-        }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             view = inflater.Inflate(Resource.Layout.english_lit_punctuation, container, false);
 
             // Set the punctuationList variable for use in other functions
-            punctuationList = (ExpandableListView)view.FindViewById(Resource.Id.engLitPunctuationExpandableList);
+            var punctuationList = (ExpandableListView)view.FindViewById(Resource.Id.engLitPunctuationExpandableList);
 
-            fillListView();
-
-            return view;
-        }
-
-        public void fillListView()
-        {
-            // Types of punctuation
-            var punctuation = new List<string>
+            var headings = new List<string>
             {
                 "Apostrophe",
                 "Brackets",
@@ -49,8 +34,7 @@ namespace RevisR
                 "Question Mark",
             };
 
-            // Usage of the punctuation
-            var explanations = new List<List<string>>
+            var content = new List<List<string>>
             {
                 // \n is a new line
                 new List<string> { "You can use apostrophes to show possession.\nFor example: \"Malcom's cat was extremely friendly.\",\nor \"We took a day trip to Gibson's house.\"\n\nYou can also use them to show missing letter(s).\nFor Example: \"It doesn't matter.\",\nor \"I'm sorry.\"\n\nMore rarely, they can be used in some single letter plurals.\nFor Example: \"Don't forget your p's and q's.\",\nor \"Jason spells cook with two k's!\"" },
@@ -68,15 +52,22 @@ namespace RevisR
                 new List<string> { "A question mark is used to indicate the end of a question.\nFor example: \"What time are you going to the fair?\"\n\nA question mark can also be used in brackets to show that the writer is unconvinced by a statement.\nFor example: \"The bus timetable purports to be accurate(?).\"" },
             };
 
+            fillListView(punctuationList, headings, content);
+
+            return view;
+        }
+
+        public void fillListView(ExpandableListView elv, List<string> headings, List<List<string>> textContent)
+        {
             // Create dictionary with expandablelistview data
             var data = new Dictionary<string, List<string>>();
             // Add the data to the dictionary
-            foreach (var i in punctuation) { data.Add(i, explanations[punctuation.IndexOf(i)]); }
+            foreach (var i in headings) { data.Add(i, textContent[headings.IndexOf(i)]); }
 
             // Create ELV adapter using homebrewed class
-            IExpandableListAdapter adapter = new CustomExpandableListAdaptor(Context, punctuation, data);
+            IExpandableListAdapter adapter = new CustomExpandableListAdaptor(Context, headings, data);
             // Set the adapter
-            punctuationList.SetAdapter(adapter);
+            elv.SetAdapter(adapter);
         }
     }
 }

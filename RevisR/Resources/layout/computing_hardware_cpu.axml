@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
     <TextView
         style="@style/title"
-        android:text="@string/eng_lit_subtitle_punctuation" />
+        android:text="@string/computing_hardware_cpu_title" />
     <TextView
         style="@style/subtitle"
         android:text="@string/tap_to_expand" />
@@ -14,5 +14,5 @@
     <ExpandableListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/engLitPunctuationExpandableList" />
+        android:id="@+id/computingHardwareCpuExpandableList" />
 </LinearLayout>

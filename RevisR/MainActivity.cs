@@ -6,6 +6,7 @@ using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Views;
+using Android.Widget;
 
 namespace RevisR
 {
@@ -38,10 +39,10 @@ namespace RevisR
         {
             var email = new Intent(Intent.ActionSend);
             email.PutExtra(Intent.ExtraEmail, new string[] {
-                "davidwheatley03@gmail.com"
+                Localisation.feedbackEmail
             });
-            email.PutExtra(Intent.ExtraSubject, "RevisR Feedback");
-            email.PutExtra(Intent.ExtraText, "Please enter the feedback you would like to give...");
+            email.PutExtra(Intent.ExtraSubject, Localisation.feedbackSubject);
+            email.PutExtra(Intent.ExtraText, Localisation.feedbackBody);
             email.SetType("message/rfc822");
             StartActivity(email);
         }
@@ -72,8 +73,21 @@ namespace RevisR
             {
                 closeApplication();
             }
+            else if (id == Resource.Id.action_home)
+            {
+                goHome();
+            }
 
             return base.OnOptionsItemSelected(item);
+        }
+
+        public void goHome()
+        {
+            var fragment = new Fragments.HomeFragment();
+            var fragmentTransaction = FragmentManager.BeginTransaction();
+            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            fragmentTransaction.AddToBackStack(null);
+            fragmentTransaction.Commit();
         }
 
         public bool OnNavigationItemSelected(IMenuItem item)
@@ -104,6 +118,10 @@ namespace RevisR
                 case Resource.Id.nav_history:
                     break;
 
+                case Resource.Id.nav_computing:
+                    fragment = new Fragments.Computing.ComputingHomeFragment();
+                    break;
+
                 case Resource.Id.nav_share:
                     break;
 
@@ -129,7 +147,20 @@ namespace RevisR
             }
             else
             {
-                Snackbar.Make(FindViewById(Android.Resource.Id.Content), "Work in progress", 0).Show();
+                Android.Support.Design.Widget.Snackbar.Make(FindViewById(Android.Resource.Id.Content), Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
+                    var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
+                    intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
+                    intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
+
+                    try
+                    {
+                        StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
+                    }
+                    catch (Android.Content.ActivityNotFoundException ex)
+                    {
+                        Toast.MakeText(ApplicationContext, "There are no email clients installed", ToastLength.Long).Show();
+                    }
+                }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
                 return false;
             }
         }
