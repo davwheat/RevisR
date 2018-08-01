@@ -60,7 +60,5 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
 
             return view;
         }
-
-        
     }
 }
