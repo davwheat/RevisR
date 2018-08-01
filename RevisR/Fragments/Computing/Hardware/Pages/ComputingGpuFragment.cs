@@ -12,21 +12,21 @@ using Android.Widget;
 
 namespace RevisR.Fragments.Computing.Hardware.Pages
 {
-    class ComputingCpuFragment : Fragment
+    class ComputingGpuFragment : Fragment
     {
         private View view;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.computing_hardware_cpu, container, false);
+            view = inflater.Inflate(Resource.Layout.computing_hardware_gpu, container, false);
 
             // Set the punctuationList variable for use in other functions
-            var hardwareExpandableList = (ExpandableListView)view.FindViewById(Resource.Id.computingHardwareCpuExpandableList);
+            var hardwareExpandableList = (ExpandableListView)view.FindViewById(Resource.Id.computingHardwareGpuExpandableList);
 
             var headings = new List<string>
             {
-                "What is a CPU?",
-                "Main Components",
+                "What is a GPU?",
+                "Cryptocurrency Mining",
                 "Input, Process, Output Model",
                 "List of Input Devices",
                 "List of Storage Devices",
@@ -42,8 +42,8 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
             var content = new List<List<string>>
             {
                 // \n is a new line
-                new List<string> { "A central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions. The computer industry has used the term \"central processing unit\" at least since the early 1960s. Traditionally, the term \"CPU\" refers to a processor, more specifically to its processing unit and control unit (CU), distinguishing these core elements of a computer from external components such as main memory and I/O circuitry." },
-                new List<string> { "There are four main components of the CPU. There is the:\n  - Arithmatic & Logic Unit (ALU)\n - Control Unit\n - Clock\n - Bus" },
+                new List<string> { "A GPU is a processor dedicated to quickly rendering (normally 3D) graphics. It can be many tens of times faster than a CPU at processing a variety of different calculations, whereas a GPU is best at focusing all the computational power on one specific task. That is because a CPU consists of a few cores (up to 24) optimized for sequential serial processing. It is designed to maximize the performance of a single task within a job; however, the range of tasks is wide. On the other hand, a GPU uses thousands of smaller and more efficient cores for a massively parallel architecture aimed at handling multiple functions at the same time.\n\nModern GPUs provide superior processing power, memory bandwidth and efficiency over their CPU counterparts. They are 50–100 times faster in tasks that require multiple parallel processes, such as machine learning and big data analysis." },
+                new List<string> { "In recent years, cryptocurrency mining has become overwhelmingly popular. Cryptocurrency mining was originally performed using CPUs. However, its limited processing speed and high power consumption led to limited output, rendering the CPU-based mining process inefficient.\n\nGPU-based mining offerend many beneifts over the use of a CPU. Even an older GPU like the AMD/ATi Radeon HD 5970 runs at 3200 32-bit instructions per clock compared to the mere 4 instructions per clock on a CPU.\n\nThe core reason behind this efficiency is that the video processing GPUs are devised to do better in performing similar and repetitive work, than in performing diversified multi-tasking functions like those of the CPU. For example, rendering a 3D movie requires the GPU to keep processing similar kinds of information to the screen again and again, though with slight changes.\n\nIt is this property of the GPU that makes them suitable and better for cryptocurrency mining, as the mining process requires higher efficiency in performing similar kinds of repetitive computations. The mining device continuously tries to decode the different hashes repeatedly with only one digit changing in each attempt in the data that is getting hashed. A GPU fits better for such dedicated processing.\n\nGPUs are also equipped with a large number of Arithmetic Logic Units(ALU), which are responsible for performing mathematical computations. Courtesy of these ALUs, the GPU is capable of performing more calculations, leading to improved output for the crypto mining process." },
                 new List<string> { "Most modern computer systems can be described using the input, process, output model.\nThe model works like a flowchart, that demonstrates how data is input into the system, which is processed to create stored data or an output.\n\nAn input device sends a signal to the processor that processes the data and either sends data into storage or to an output device." },
                 new List<string> { "This example represents a supermarket checkout computer system.\n\nThe cashier scans the item(s) using the barcode scanner (an input). After each item the speaker bleeps (a sound output) and the item appears on screen (a display/visual output).\n\nThe cashier begins the transaction using the touchscreen (an input) and the customer pays with cash, or using card via chip and pin machine or an NFC tag reader (both inputs).\n\nThe transaction in processed then stored on a central system.\n\nFinally, the receipt prints (output) and the cashier is ready for the next customer." },
                 new List<string> { "Input devices (non-exhaustive):\n - Mouse\n - Keyboard\n - Graphics Tablet\n - Touchscreen\n - Webcam\n - Scanner\n - Microphone" },
@@ -60,5 +60,7 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
 
             return view;
         }
+
+        
     }
 }

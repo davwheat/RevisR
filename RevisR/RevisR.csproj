@@ -32,7 +32,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>3</WarningLevel>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
@@ -66,10 +66,12 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.cs" />
     <Compile Include="CustomExpandableListAdaptor.cs" />
     <Compile Include="Fragments\Computing\Hardware\ComputingHardwareFragment.cs" />
     <Compile Include="Fragments\Computing\ComputingHomeFragment.cs" />
     <Compile Include="Fragments\Computing\Hardware\Pages\ComputingCpuFragment.cs" />
+    <Compile Include="Fragments\Computing\Hardware\Pages\ComputingGpuFragment.cs" />
     <Compile Include="Fragments\English\Language\EnglishLangHomeFragment.cs" />
     <Compile Include="Fragments\English\Language\Pages\Papers\EnglishLangPaper1aFragment.cs" />
     <Compile Include="Fragments\English\Language\Pages\Papers\EnglishLangPaper1bFragment.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Fragments\English\Literature\Pages\EnglishLitTechniquesFragment.cs" />
     <Compile Include="Fragments\HomeFragment.cs" />
     <Compile Include="Fragments\English\EnglishHomeFragment.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Localisation.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Fragments\Maths\Pages\MathsDefinitionsFragment.cs" />
@@ -110,6 +113,10 @@
       <DependentUpon>computing_home.axml</DependentUpon>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\computing_hardware_cpu.axml">
+      <SubType>Designer</SubType>
+      <DependentUpon>computing_hardware.axml</DependentUpon>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\computing_hardware_gpu.axml">
       <SubType>Designer</SubType>
       <DependentUpon>computing_hardware.axml</DependentUpon>
     </AndroidResource>
@@ -246,6 +253,7 @@
     <AndroidResource Include="Resources\drawable\menu_computing.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Fragments\Computing\Software\" />
     <Folder Include="Fragments\Humanities\Geography\" />
     <Folder Include="Fragments\Humanities\History\" />
     <Folder Include="Fragments\Humanities\RE\" />
