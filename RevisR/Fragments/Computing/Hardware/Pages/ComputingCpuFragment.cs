@@ -56,22 +56,9 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
                 new List<string> { "The FDE cycle is used to describe the process instructions go through. It all occurs inside the CPU.\n\nFetch: Get the instruction code from memory with a memory adress (a piece of information that tells the CPU where things are in memory).\n\nDecode: Decode the instructions in the processor's registers, depending on the encoding method used.\n\nExecute: Finally the ALU performs the operations on the instuction(s) and stores the output in memory or sends it to an output device." },
             };
 
-            fillListView(hardwareExpandableList, headings, content);
+            Common.fillListView(hardwareExpandableList, headings, content, Context);
 
             return view;
-        }
-
-        public void fillListView(ExpandableListView elv, List<string> headings, List<List<string>> textContent)
-        {
-            // Create dictionary with expandablelistview data
-            var data = new Dictionary<string, List<string>>();
-            // Add the data to the dictionary
-            foreach (var i in headings) { data.Add(i, textContent[headings.IndexOf(i)]); }
-
-            // Create ELV adapter using homebrewed class
-            IExpandableListAdapter adapter = new CustomExpandableListAdaptor(Context, headings, data);
-            // Set the adapter
-            elv.SetAdapter(adapter);
         }
     }
 }
