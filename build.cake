@@ -10,7 +10,7 @@ var target = Argument("target", "Default");
 var configuration = "Release";
 
 // Define directories.
-var solutionFile = new FilePath("Xamarin.Android.Fingerprint.sln");
+var solutionFile = new FilePath("RevisR.sln");
 var artifactsDirectory = new DirectoryPath("artifacts");
 
 // Versioning.
