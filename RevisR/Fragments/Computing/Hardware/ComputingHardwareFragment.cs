@@ -37,12 +37,11 @@ namespace RevisR.Fragments.Computing.Hardware
 
         public void openComputingHardwareGpu(object sender, EventArgs e)
         {
-            //Fragment fragment = new Pages.ComputingCpuFragment();
-            //var fragmentTransaction = FragmentManager.BeginTransaction();
-            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            //fragmentTransaction.AddToBackStack(null);
-            //fragmentTransaction.Commit();
-            Common.notImplementedWarning(view, Context);
+            Fragment fragment = new Pages.ComputingGpuFragment();
+            var fragmentTransaction = FragmentManager.BeginTransaction();
+            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            fragmentTransaction.AddToBackStack(null);
+            fragmentTransaction.Commit();
         }
 
         public void openComputingHardwareMobo(object sender, EventArgs e)
