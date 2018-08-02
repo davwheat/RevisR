@@ -6,7 +6,7 @@ using Android.Support.Design.Widget;
 
 namespace RevisR
 {
-    class Common
+    static class Common
     {
         public static void fillListView(ExpandableListView elv, List<string> headings, List<List<string>> textContent, Context context)
         {
