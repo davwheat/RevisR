@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 
 using Android.App;
+using Android.Graphics;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using ImageViews.Photo;
 
 namespace RevisR.Fragments.Computing.Hardware.Pages
 {
