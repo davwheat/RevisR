@@ -1,13 +1,18 @@
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 using Android.App;
+using Android.Content;
 using Android.OS;
+using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
 namespace RevisR.Fragments.Computing.Hardware.Pages
 {
-    class ComputingGpuFragment : Fragment
+    class ComputingMoboFragment : Fragment
     {
         private View view;
 
@@ -16,7 +21,7 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
             view = inflater.Inflate(Resource.Layout.computing_hardware_gpu, container, false);
 
             // Set the expandablelistview variable for use in other functions
-            var hardwareExpandableList = (ExpandableListView)view.FindViewById(Resource.Id.computingHardwareGpuExpandableList);
+            var hardwareExpandableList = (ExpandableListView)view.FindViewById(Resource.Id.computingHardwareMoboExpandableList);
 
             var headings = new List<string>
             {

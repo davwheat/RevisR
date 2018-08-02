@@ -6,7 +6,7 @@ using System;
 
 namespace RevisR.Fragments.Computing.Hardware
 {
-    internal class ComputingHardwareFragment : Fragment
+    class ComputingHardwareFragment : Fragment
     {
         private View view;
 
