@@ -69,18 +69,19 @@ namespace RevisR
         {
             var i = groupPosition;
             var title = GetGroup(i).ToString();
+            var newview = convertView;
 
-            if (convertView == null)
+            if (newview == null)
             {
                 var inflater = LayoutInflater.FromContext(context);
-                convertView = inflater.Inflate(Resource.Layout.expandablelistview_parent, null);
+                newview = inflater.Inflate(Resource.Layout.expandablelistview_parent, null);
             }
 
             var parentText = (TextView)convertView.FindViewById(Resource.Id.elvTextParent);
 
             parentText.SetText(title, TextView.BufferType.Normal);
 
-            return convertView;
+            return newview;
         }
 
         public override View GetChildView(int groupPosition, int childPosition, bool isLastChild, View convertView, ViewGroup parent)

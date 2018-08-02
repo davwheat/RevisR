@@ -8,11 +8,9 @@ namespace RevisR.Fragments.English
 {
     public class EnglishHomeFragment : Fragment
     {
-        private View view;
-
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.english_home, container, false);
+            var view = inflater.Inflate(Resource.Layout.english_home, container, false);
 
             ((TextView)view.FindViewById(Resource.Id.engOpenLang)).Click += openEngLangMethod;
             ((TextView)view.FindViewById(Resource.Id.engOpenLit)).Click += openEngLitMethod;

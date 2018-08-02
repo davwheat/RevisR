@@ -9,11 +9,9 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
 {
     class ComputingCpuFragment : Fragment
     {
-        private View view;
-
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.computing_hardware_cpu, container, false);
+            var view = inflater.Inflate(Resource.Layout.computing_hardware_cpu, container, false);
 
             // Set the punctuationList variable for use in other functions
             var hardwareExpandableList = (ExpandableListView)view.FindViewById(Resource.Id.computingHardwareCpuExpandableList);

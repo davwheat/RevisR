@@ -2426,11 +2426,11 @@ namespace RevisR
 			// aapt resource value: 0x7f08010c
 			public const int action_divider = 2131230988;
 			
-			// aapt resource value: 0x7f080125
-			public const int action_exit = 2131231013;
+			// aapt resource value: 0x7f080126
+			public const int action_exit = 2131231014;
 			
-			// aapt resource value: 0x7f080124
-			public const int action_home = 2131231012;
+			// aapt resource value: 0x7f080125
+			public const int action_home = 2131231013;
 			
 			// aapt resource value: 0x7f080106
 			public const int action_image = 2131230982;
@@ -2962,6 +2962,9 @@ namespace RevisR
 			
 			// aapt resource value: 0x7f080120
 			public const int nav_computing = 2131231008;
+			
+			// aapt resource value: 0x7f080124
+			public const int nav_discord = 2131231012;
 			
 			// aapt resource value: 0x7f08011c
 			public const int nav_english = 2131231004;

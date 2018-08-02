@@ -8,11 +8,9 @@ namespace RevisR.Fragments.English.Literature.Pages
 {
     public class EnglishLitPunctuationFragment : Fragment
     {
-        private View view;
-
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.english_lit_punctuation, container, false);
+            var view = inflater.Inflate(Resource.Layout.english_lit_punctuation, container, false);
 
             // Set the punctuationList variable for use in other functions
             var punctuationList = (ExpandableListView)view.FindViewById(Resource.Id.engLitPunctuationExpandableList);
@@ -52,22 +50,9 @@ namespace RevisR.Fragments.English.Literature.Pages
                 new List<string> { "A question mark is used to indicate the end of a question.\nFor example: \"What time are you going to the fair?\"\n\nA question mark can also be used in brackets to show that the writer is unconvinced by a statement.\nFor example: \"The bus timetable purports to be accurate(?).\"" },
             };
 
-            fillListView(punctuationList, headings, content);
+            Common.fillListView(punctuationList, headings, content, Context);
 
             return view;
-        }
-
-        public void fillListView(ExpandableListView elv, List<string> headings, List<List<string>> textContent)
-        {
-            // Create dictionary with expandablelistview data
-            var data = new Dictionary<string, List<string>>();
-            // Add the data to the dictionary
-            foreach (var i in headings) { data.Add(i, textContent[headings.IndexOf(i)]); }
-
-            // Create ELV adapter using homebrewed class
-            IExpandableListAdapter adapter = new CustomExpandableListAdaptor(Context, headings, data);
-            // Set the adapter
-            elv.SetAdapter(adapter);
         }
     }
 }

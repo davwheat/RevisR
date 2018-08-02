@@ -9,11 +9,9 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
 {
     class ComputingGpuFragment : Fragment
     {
-        private View view;
-
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            view = inflater.Inflate(Resource.Layout.computing_hardware_gpu, container, false);
+            var view = inflater.Inflate(Resource.Layout.computing_hardware_gpu, container, false);
 
             // Set the expandablelistview variable for use in other functions
             var hardwareExpandableList = (ExpandableListView)view.FindViewById(Resource.Id.computingHardwareGpuExpandableList);

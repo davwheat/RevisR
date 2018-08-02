@@ -1,12 +1,5 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Support.Design.Widget;
@@ -30,20 +23,31 @@ namespace RevisR
 
         public static void notImplementedWarning(View view, Context context)
         {
-            Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Send Feedback", (v) => {
-                var intent = new Intent(Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
-                intent.PutExtra(Intent.ExtraSubject, "RevisR Feedback");
-                intent.PutExtra(Intent.ExtraText, "Please type your feedback here.");
+            Snackbar.Make(view, Localisation.snackbarComingSoon, 0)
+                .SetAction("Send Feedback", (v) => { sendFeedback(context); })
+                .SetActionTextColor(Android.Graphics.Color.DarkTurquoise)
+                .Show();
+        }
 
-                try
-                {
-                    context.StartActivity(Intent.CreateChooser(intent, "Send mail..."));
-                }
-                catch (ActivityNotFoundException)
-                {
-                    Toast.MakeText(context, "There are no email clients installed", ToastLength.Long).Show();
-                }
-            }).SetActionTextColor(Android.Graphics.Color.DarkTurquoise).Show();
+        public static void sendFeedback(Context context)
+        {
+            var intent = new Intent(Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
+            intent.PutExtra(Intent.ExtraSubject, "RevisR Feedback");
+            intent.PutExtra(Intent.ExtraText, "Please type your feedback here.");
+
+            try
+            {
+                context.StartActivity(Intent.CreateChooser(intent, "Send mail..."));
+            }
+            catch (ActivityNotFoundException)
+            {
+                Toast.MakeText(context, "There are no email clients installed", ToastLength.Long).Show();
+            }
+        }
+
+        public static void openDiscordServer(Context context) {
+            var browserIntent = new Intent(Intent.ActionView, Android.Net.Uri.Parse("https://discord.gg/TaGxQ8"));
+            context.StartActivity(browserIntent);
         }
     }
 }

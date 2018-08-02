@@ -35,18 +35,6 @@ namespace RevisR
             fragmentTransaction.Commit();
         }
 
-        public void sendFeedback()
-        {
-            var email = new Intent(Intent.ActionSend);
-            email.PutExtra(Intent.ExtraEmail, new string[] {
-                Localisation.feedbackEmail
-            });
-            email.PutExtra(Intent.ExtraSubject, Localisation.feedbackSubject);
-            email.PutExtra(Intent.ExtraText, Localisation.feedbackBody);
-            email.SetType("message/rfc822");
-            StartActivity(email);
-        }
-
         public override void OnBackPressed()
         {
             var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
@@ -113,8 +101,6 @@ namespace RevisR
                     break;
 
                 case Resource.Id.nav_geography:
-                    break;
-
                 case Resource.Id.nav_history:
                     break;
 
@@ -126,11 +112,15 @@ namespace RevisR
                     break;
 
                 case Resource.Id.nav_feedback:
-                    sendFeedback();
+                    Common.sendFeedback(Application.ApplicationContext);
                     return false;
 
                 case Resource.Id.nav_about:
                     break;
+
+                case Resource.Id.nav_discord:
+                    Common.openDiscordServer(Application.ApplicationContext);
+                    return false;
             }
 
             if (fragment != null)
