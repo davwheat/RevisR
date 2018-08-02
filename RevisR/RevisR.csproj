@@ -120,6 +120,7 @@
     <Compile Include="Fragments\Computing\ComputingHomeFragment.cs" />
     <Compile Include="Fragments\Computing\Hardware\Pages\ComputingCpuFragment.cs" />
     <Compile Include="Fragments\Computing\Hardware\Pages\ComputingGpuFragment.cs" />
+    <Compile Include="Fragments\Computing\Hardware\Pages\ComputingMoboFragment.cs" />
     <Compile Include="Fragments\English\Language\EnglishLangHomeFragment.cs" />
     <Compile Include="Fragments\English\Language\Pages\Papers\EnglishLangPaper1aFragment.cs" />
     <Compile Include="Fragments\English\Language\Pages\Papers\EnglishLangPaper1bFragment.cs" />
