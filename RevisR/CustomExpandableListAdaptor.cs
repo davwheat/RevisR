@@ -77,7 +77,7 @@ namespace RevisR
                 newview = inflater.Inflate(Resource.Layout.expandablelistview_parent, null);
             }
 
-            var parentText = (TextView)convertView.FindViewById(Resource.Id.elvTextParent);
+            var parentText = (TextView)newview.FindViewById(Resource.Id.elvTextParent);
 
             parentText.SetText(title, TextView.BufferType.Normal);
 
@@ -87,18 +87,19 @@ namespace RevisR
         public override View GetChildView(int groupPosition, int childPosition, bool isLastChild, View convertView, ViewGroup parent)
         {
             var item = GetChild(groupPosition, childPosition).ToString();
+            var newview = convertView;
 
-            if (convertView == null)
+            if (newview == null)
             {
                 var inflater = LayoutInflater.FromContext(context);
-                convertView = inflater.Inflate(Resource.Layout.expandablelistview_child, null);
+                newview = inflater.Inflate(Resource.Layout.expandablelistview_child, null);
             }
 
-            var childText = (TextView)convertView.FindViewById(Resource.Id.elvTextChild);
+            var childText = (TextView)newview.FindViewById(Resource.Id.elvTextChild);
 
             childText.SetText(item, TextView.BufferType.Normal);
 
-            return convertView;
+            return newview;
         }
     }
 }
