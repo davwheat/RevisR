@@ -1,0 +1,122 @@
+<resources>
+  <!--Navigation Drawer-->
+  <string name="nav_title">RevisR</string>
+  <string name="nav_subtitle">v1.0b</string>
+
+  <string name="nav_home">Welcome</string>
+  <string name="nav_english">English</string>
+  <string name="nav_maths">Maths</string>
+  <string name="nav_geography">Geography</string>
+  <string name="nav_history">History</string>
+  <string name="nav_computing">Computer Studies</string>
+
+  <string name="app_name">RevisR</string>
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+  <string name="action_exit">Exit</string>
+
+  <string name="tap_to_expand">Tap an option to expand it</string>
+
+  <!-- Welcome Fragment -->
+  <string name="home_title">Welcome to RevisR!</string>
+  <string name="home_tag">Your free GCSE revision guide</string>
+  <string name="home_howto">Click the menu at the top of the screen to select a subject</string>
+
+  <!-- English Fragment -->
+  <string name="eng_home_title">English Language &amp; Literature</string>
+  <string name="eng_home_subtitle">Choose an option:</string>
+
+  <string name="eng_lang_title">English Language</string>
+  <string name="eng_lit_title">English Literature</string>
+
+  <!-- LANG Paper 1 Section A -->
+  <string name="eng_lang_subtitle_paper1a">Language Paper 1: Section A</string>
+
+  <string name="eng_lang_paper1a_q1">Q1: List 4 things (5 mins)</string>
+  <string name="eng_lang_paper1a_q1_para1">These ‘things’ may be explicit (obvious) or implicit (hidden, hinted at).</string>
+
+  <string name="eng_lang_paper1a_q2">Q2: How does the writer’s use of language… (10 mins)</string>
+  <string name="eng_lang_paper1a_q2_para1">Focus on a given section within the extract.</string>
+  <string name="eng_lang_paper1a_q2_para2">Comment on the writer’s methods, explaining how they want to make the reader Feel, Imagine or Think (F.I.T.)</string>
+
+  <string name="eng_lang_paper1a_q3">Q3: How does the writer use structure (15 mins)</string>
+  <string name="eng_lang_paper1a_q3_para1">Focus on the whole source.</string>
+  <string name="eng_lang_paper1a_q3_para2">Look at character, setting and atmosphere. How do they change from the beginning, to the middle, to the end?</string>
+  <string name="eng_lang_paper1a_q3_para3">What is the writer trying to achieve through these changes?</string>
+  <string name="eng_lang_paper1a_q3_para4">"Check for Todorov's stages."</string>
+  <string name="eng_lang_paper1a_q3_para5">How does the writer change viewpoint and what is its effect?</string>
+
+  <string name="eng_lang_paper1a_q4">Q4: To what extent do you agree? (20 mins)</string>
+  <string name="eng_lang_paper1a_q4_para1">Focus on the given section of the extract.</string>
+  <string name="eng_lang_paper1a_q4_para2">Prove / explain / demonstrate why someone would say this about the extract (Remember! The question begins with a comment by someone who has read the extract).</string>
+  <string name="eng_lang_paper1a_q4_para3">What is the writer trying to achieve through these changes?</string>
+  <string name="eng_lang_paper1a_q4_para4">You could think about how the writer has used language / structure / tone / implicit and explicit meaning.</string>
+
+  <!-- LANG Paper 1 Section B -->
+  <string name="eng_lang_subtitle_paper1b">Language Paper 1: Section B</string>
+
+  <string name="eng_lang_paper1b_q5">Q5: Descriptive / narrative writing (50 mins: 5 mins planning + 40 mins writing + 5 mins checking)</string>
+  <string name="eng_lang_paper1b_q5_para1">Write a description / narrative using the picture as your stimulus.</string>
+  <string name="eng_lang_paper1b_q5_para2">Use AFOREST of techniques.</string>
+  <string name="eng_lang_paper1b_q5_para3">Varying sentence types: fragment; short; compound; complex.</string>
+  <string name="eng_lang_paper1b_q5_para4">Add dialogue in your writing.</string>
+  <string name="eng_lang_paper1b_q5_para5">Remember a range of punctuation e.g. ( ) , ; ! ?</string>
+
+  <!-- LANG Paper 2 Section A -->
+  <string name="eng_lang_subtitle_paper2a">Language Paper 2: Section A</string>
+
+  <string name="eng_lang_paper2a_q1">Q1: True / False statements (5 mins)</string>
+  <string name="eng_lang_paper2a_q1_para1">Shade in the four correct statements</string>
+
+  <string name="eng_lang_paper2a_q2">Q2: Write a summary... (10 mins)</string>
+  <string name="eng_lang_paper2a_q2_para1">Compare the sources, summarising the explicit and implicit ideas</string>
+
+  <string name="eng_lang_paper2a_q3">Q3: How does the writer use language (15 mins)</string>
+  <string name="eng_lang_paper2a_q3_para1">Focus on one source.</string>
+  <string name="eng_lang_paper2a_q3_para2">Comment on the writer’s methods, explaining how they want to make the reader Feel, Imagine or Think (F.I.T.)</string>
+
+  <string name="eng_lang_paper2a_q4">Q4: Compare different perspectives / viewpoints (20 mins)</string>
+  <string name="eng_lang_paper2a_q4_para1">How do their viewpoints / perspectives compare / contrast? Why?</string>
+  <string name="eng_lang_paper2a_q4_para2">What methods do the writers use to convey their viewpoint / perspective?</string>
+  <string name="eng_lang_paper2a_q4_para3">What implicit viewpoints / perspectives are there?</string>
+
+  <!-- LANG Paper 1 Section B -->
+  <string name="eng_lang_subtitle_paper2b">Language Paper 2: Section B</string>
+
+  <string name="eng_lang_paper2b_q5">Q5: Write about your own views (50 mins: 5 mins planning + 40 mins writing + 5 mins checking)</string>
+  <string name="eng_lang_paper2b_q5_para1">You will be asked to write your own views on a given subject.</string>
+  <string name="eng_lang_paper2b_q5_para2">You will have to express your views in the form of a newspaper article, a speech, a letter, or another genre.</string>
+  <string name="eng_lang_paper2b_q5_para3">AFOREST of techniques.</string>
+
+  <!-- LITERATURE -->
+  <string name="eng_lit_subtitle_techniques">Writing Techniques</string>
+  <string name="eng_lit_subtitle_punctuation">Punctuation &amp; Usage</string>
+
+  <!-- MATHS -->
+  <string name="maths_title">Maths Foundation &amp; Higher</string>
+  <string name="maths_home_subtitle">Choose an option:</string>
+
+  <string name="maths_home_definitions">Key definitions</string>
+
+  <string name="maths_definitions_subtitle">Definition List</string>
+  
+  <!-- COMPUTING -->
+  <string name="computing_title">Computer Studies</string>
+  <string name="computing_home_subtitle">Choose an option:</string>
+
+  <string name="computing_hardware_title">Computer Hardware</string>
+  <string name="computing_software_title">Computer Software</string>
+  <string name="computing_operatingsystems_title">Operating Systems</string>
+  <string name="computing_binary_title">Binary</string>
+  <string name="computing_hexadecimal_title">Hexadecimal</string>
+  
+  <!-- Hardware -->
+  <string name="computing_hardware_cpu_title">Central Processing Unit (CPU)</string>
+  <string name="computing_hardware_gpu_title">Graphical Processing Unit (GPU)</string>
+  <string name="computing_hardware_motherboard_title">Motherboard</string>
+  <string name="computing_hardware_hdd_title">Hard Disk Drive (HDD)</string>
+  <string name="computing_hardware_ssd_title">Solid State Drive (SSD)</string>
+  <string name="computing_hardware_ram_title">Random Access Memory (RAM)</string>
+  <string name="computing_hardware_case_title">Case</string>
+  <string name="computing_hardware_psu_title">Power Supply (PSU)</string>
+</resources>

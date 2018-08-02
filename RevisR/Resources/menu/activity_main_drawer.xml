@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/menu_home"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/nav_english"
+        android:icon="@drawable/menu_english"
+        android:title="@string/nav_english" />
+    <item
+        android:id="@+id/nav_maths"
+        android:icon="@drawable/menu_maths"
+        android:title="@string/nav_maths" />
+    <item
+        android:id="@+id/nav_geography"
+        android:icon="@drawable/menu_geography"
+        android:title="@string/nav_geography" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/menu_history"
+        android:title="@string/nav_history" />
+    <item
+        android:id="@+id/nav_computing"
+        android:icon="@drawable/menu_computing"
+        android:title="@string/nav_computing" />
+  </group>
+
+  <item android:title="More">
+    <menu>
+      <item
+          android:id="@+id/nav_share"
+          android:icon="@drawable/ic_menu_share"
+          android:title="Share" />
+      <item
+          android:id="@+id/nav_feedback"
+          android:icon="@drawable/ic_menu_send"
+          android:title="Feedback" />
+      <item
+          android:id="@+id/nav_about"
+          android:icon="@drawable/menu_info"
+          android:title="About" />
+    </menu>
+  </item>
+</menu>

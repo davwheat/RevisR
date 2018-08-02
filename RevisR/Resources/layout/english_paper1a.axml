@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            style="@style/title"
+            android:text="@string/eng_lang_title" />
+        <TextView
+            style="@style/subtitle"
+            android:text="@string/eng_lang_subtitle_paper1a" />
+        <View
+            style="@style/LargeDivider" />
+        <TextView
+            style="@style/heading"
+            android:text="@string/eng_lang_paper1a_q1"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q1_para1"
+            android:id="@+id/text" />
+        <View
+            style="@style/Divider" />
+        <TextView
+            style="@style/heading"
+            android:text="@string/eng_lang_paper1a_q2"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q2_para1"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q2_para2"
+            android:id="@+id/text" />
+        <View
+            style="@style/Divider" />
+        <TextView
+            style="@style/heading"
+            android:text="@string/eng_lang_paper1a_q3"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q3_para1"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q3_para2"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q3_para3"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q3_para4"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q3_para5"
+            android:id="@+id/text" />
+        <View
+            style="@style/Divider" />
+        <TextView
+            style="@style/heading"
+            android:text="@string/eng_lang_paper1a_q4"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q4_para1"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q4_para2"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q4_para3"
+            android:id="@+id/text" />
+        <TextView
+            style="@style/text"
+            android:text="@string/eng_lang_paper1a_q4_para4"
+            android:id="@+id/text" />
+    </LinearLayout>
+</ScrollView>

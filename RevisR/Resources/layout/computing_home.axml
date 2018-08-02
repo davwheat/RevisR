@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            style="@style/title"
+            android:text="@string/computing_title" />
+        <TextView
+            style="@style/subtitle"
+            android:text="@string/computing_home_subtitle" />
+        <View
+            style="@style/LargeDivider" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/computing_hardware_title"
+            android:id="@+id/computingHardwareButton" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/computing_software_title"
+            android:id="@+id/computingSoftwareButton" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/computing_operatingsystems_title"
+            android:id="@+id/computingOsButton" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/computing_binary_title"
+            android:id="@+id/computingBinaryButton" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/computing_hexadecimal_title"
+            android:id="@+id/computingHexadecimalButton" />
+        <View
+            style="@style/itemSeparator" />
+    </LinearLayout>
+</ScrollView>

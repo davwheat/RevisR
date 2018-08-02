@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            style="@style/title"
+            android:text="@string/eng_lang_title" />
+        <TextView
+            style="@style/subtitle"
+            android:text="@string/eng_home_subtitle" />
+        <View
+            style="@style/LargeDivider" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/eng_lang_subtitle_paper1a"
+            android:id="@+id/engLangPaper1aButton" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/eng_lang_subtitle_paper1b"
+            android:id="@+id/engLangPaper1bButton" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/eng_lang_subtitle_paper2a"
+            android:id="@+id/engLangPaper2aButton" />
+        <View
+            style="@style/itemSeparator" />
+        <TextView
+            style="@style/maths_def"
+            android:text="@string/eng_lang_subtitle_paper2b"
+            android:id="@+id/engLangPaper2bButton" />
+        <View
+            style="@style/itemSeparator" />
+    </LinearLayout>
+</ScrollView>
