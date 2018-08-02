@@ -1,4 +1,4 @@
-﻿using Android.App;
+using Android.App;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
@@ -37,25 +37,11 @@ namespace RevisR.Fragments.Computing.Hardware
 
         public void openComputingHardwareGpu(object sender, EventArgs e)
         {
-            //Fragment fragment = new Pages.ComputingCpuFragment();
-            //var fragmentTransaction = FragmentManager.BeginTransaction();
-            //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            //fragmentTransaction.AddToBackStack(null);
-            //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
-                var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
-                intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
-                intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
-
-                try
-                {
-                    StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
-                }
-                catch (Android.Content.ActivityNotFoundException ex)
-                {
-                    Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show();
-                }
-            }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
+            Fragment fragment = new Pages.ComputingGpuFragment();
+            var fragmentTransaction = FragmentManager.BeginTransaction();
+            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+            fragmentTransaction.AddToBackStack(null);
+            fragmentTransaction.Commit();
         }
 
         public void openComputingHardwareMobo(object sender, EventArgs e)
@@ -65,20 +51,7 @@ namespace RevisR.Fragments.Computing.Hardware
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
-                var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
-                intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
-                intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
-
-                try
-                {
-                    StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
-                }
-                catch (Android.Content.ActivityNotFoundException ex)
-                {
-                    Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show();
-                }
-            }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
+            Common.notImplementedWarning(view, Context);
         }
 
         public void openComputingHardwareHdd(object sender, EventArgs e)
@@ -88,20 +61,7 @@ namespace RevisR.Fragments.Computing.Hardware
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
-                var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
-                intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
-                intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
-
-                try
-                {
-                    StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
-                }
-                catch (Android.Content.ActivityNotFoundException ex)
-                {
-                    Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show();
-                }
-            }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
+            Common.notImplementedWarning(view, Context);
         }
 
         public void openComputingHardwareSsd(object sender, EventArgs e)
@@ -111,20 +71,7 @@ namespace RevisR.Fragments.Computing.Hardware
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
-                var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
-                intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
-                intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
-
-                try
-                {
-                    StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
-                }
-                catch (Android.Content.ActivityNotFoundException ex)
-                {
-                    Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show();
-                }
-            }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
+            Common.notImplementedWarning(view, Context);
         }
 
         public void openComputingHardwareRam(object sender, EventArgs e)
@@ -134,20 +81,7 @@ namespace RevisR.Fragments.Computing.Hardware
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
-                var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
-                intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
-                intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
-
-                try
-                {
-                    StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
-                }
-                catch (Android.Content.ActivityNotFoundException ex)
-                {
-                    Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show();
-                }
-            }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
+            Common.notImplementedWarning(view, Context);
         }
 
         public void openComputingHardwareCase(object sender, EventArgs e)
@@ -157,20 +91,7 @@ namespace RevisR.Fragments.Computing.Hardware
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
-                var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
-                intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
-                intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
-
-                try
-                {
-                    StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
-                }
-                catch (Android.Content.ActivityNotFoundException ex)
-                {
-                    Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show();
-                }
-            }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
+            Common.notImplementedWarning(view, Context);
         }
 
         public void openComputingHardwarePsu(object sender, EventArgs e)
@@ -180,20 +101,7 @@ namespace RevisR.Fragments.Computing.Hardware
             //fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
             //fragmentTransaction.AddToBackStack(null);
             //fragmentTransaction.Commit();
-            Android.Support.Design.Widget.Snackbar.Make(view, Localisation.snackbarComingSoon, 0).SetAction("Feedback", (v) => {
-                var intent = new Android.Content.Intent(Android.Content.Intent.ActionSendto, Android.Net.Uri.FromParts("mailto", "davidwheatley03@gmail.com", null));
-                intent.PutExtra(Android.Content.Intent.ExtraSubject, "RevisR Feedback");
-                intent.PutExtra(Android.Content.Intent.ExtraText, "Please type your feedback here.");
-
-                try
-                {
-                    StartActivity(Android.Content.Intent.CreateChooser(intent, "Send mail..."));
-                }
-                catch (Android.Content.ActivityNotFoundException ex)
-                {
-                    Toast.MakeText(Context, "There are no email clients installed", ToastLength.Long).Show();
-                }
-            }).SetActionTextColor(Android.Graphics.Color.SteelBlue).Show();
+            Common.notImplementedWarning(view, Context);
         }
     }
 }
