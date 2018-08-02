@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/title"
+        android:text="@string/computing_hardware_motherboard_title" />
+    <TextView
+        style="@style/subtitle"
+        android:text="@string/tap_to_expand" />
+    <View
+        style="@style/LargeDivider" />
+    <TextView
+        style="@style/maths_def"
+        android:text="@string/computing_hardware_motherboard_diagram_text" />
+    <ImageView
+        android:src="@drawable/motherboard_diagram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true" />
+    <View
+        style="@style/LargeDivider" />
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/computingHardwareMoboExpandableList" />
+</LinearLayout>

@@ -119,4 +119,6 @@
   <string name="computing_hardware_ram_title">Random Access Memory (RAM)</string>
   <string name="computing_hardware_case_title">Case</string>
   <string name="computing_hardware_psu_title">Power Supply (PSU)</string>
+
+  <string name="computing_hardware_motherboard_diagram_text">Motherboard Labelled Diagram</string>
 </resources>
