@@ -85,9 +85,6 @@ namespace RevisR
 
             switch (id)
             {
-                default:
-                    break;
-
                 case Resource.Id.nav_home:
                     fragment = new Fragments.HomeFragment();
                     break;
@@ -100,23 +97,20 @@ namespace RevisR
                     fragment = new Fragments.Maths.MathsHomeFragment();
                     break;
 
+                default:
                 case Resource.Id.nav_geography:
                 case Resource.Id.nav_history:
+                case Resource.Id.nav_share:
+                case Resource.Id.nav_about:
                     break;
 
                 case Resource.Id.nav_computing:
                     fragment = new Fragments.Computing.ComputingHomeFragment();
                     break;
 
-                case Resource.Id.nav_share:
-                    break;
-
                 case Resource.Id.nav_feedback:
                     Common.sendFeedback(Application.ApplicationContext);
                     return false;
-
-                case Resource.Id.nav_about:
-                    break;
 
                 case Resource.Id.nav_discord:
                     Common.openDiscordServer(Application.ApplicationContext);
