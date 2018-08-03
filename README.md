@@ -1,7 +1,7 @@
 # RevisR
 
 [![CodeFactor](https://www.codefactor.io/repository/github/davwheat/revisr/badge)](https://www.codefactor.io/repository/github/davwheat/revisr)
-
+[![Build status](https://davwheat.visualstudio.com/RevisR/_apis/build/status/Normal%20Build)](https://davwheat.visualstudio.com/RevisR/_build/latest?definitionId=1)
 
 ## About
 **RevisR** is a free GCSE Revision Helper for Android by students, for students. Contributions to this product are happily accepted.
