@@ -6,9 +6,9 @@ using Android.Support.Design.Widget;
 
 namespace RevisR
 {
-    static class Common
+    class Common
     {
-        public static void fillListView(ExpandableListView elv, List<string> headings, List<List<string>> textContent, Context context)
+        public static void fillListView(ExpandableListView elv, List<string> headings, List<List<string>> textContent, Context context, Dictionary<int, int> images = null)
         {
             // Create dictionary with expandablelistview data
             var data = new Dictionary<string, List<string>>();
@@ -16,7 +16,7 @@ namespace RevisR
             foreach (var i in headings) { data.Add(i, textContent[headings.IndexOf(i)]); }
 
             // Create ELV adapter using homebrewed class
-            IExpandableListAdapter adapter = new CustomExpandableListAdaptor(context, headings, data);
+            IExpandableListAdapter adapter = new CustomExpandableListAdaptor(context, headings, data, images);
             // Set the adapter
             elv.SetAdapter(adapter);
         }

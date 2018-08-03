@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using System.Collections.Generic;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Java.Lang;
 
 namespace RevisR
 {
@@ -18,12 +10,21 @@ namespace RevisR
         readonly Context context;
         readonly List<string> headings;
         readonly Dictionary<string, List<string>> map;
+        readonly Dictionary<int, int> customLayouts;
 
-        public CustomExpandableListAdaptor(Context context, List<string> headings, Dictionary<string, List<string>> map)
+        public CustomExpandableListAdaptor(Context context, List<string> headings, Dictionary<string, List<string>> map, Dictionary<int, int> customLayouts)
         {
             this.context = context;
             this.headings = headings;
             this.map = map;
+            if (customLayouts != null)
+            {
+                this.customLayouts = customLayouts;
+            }
+            else
+            {
+                this.customLayouts = new Dictionary<int, int>();
+            }
         }
 
         public override int GroupCount => headings.Count;
@@ -87,12 +88,12 @@ namespace RevisR
         public override View GetChildView(int groupPosition, int childPosition, bool isLastChild, View convertView, ViewGroup parent)
         {
             var item = GetChild(groupPosition, childPosition).ToString();
-            var newview = convertView;
+            View newview = null;
 
             if (newview == null)
             {
                 var inflater = LayoutInflater.FromContext(context);
-                newview = inflater.Inflate(Resource.Layout.expandablelistview_child, null);
+                newview = inflater.Inflate(customLayouts.TryGetValue(groupPosition, out int layout) ? layout : Resource.Layout.expandablelistview_child, null);
             }
 
             var childText = (TextView)newview.FindViewById(Resource.Id.elvTextChild);

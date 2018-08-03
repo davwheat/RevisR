@@ -11,17 +11,6 @@
         android:text="@string/tap_to_expand" />
     <View
         style="@style/LargeDivider" />
-    <TextView
-        style="@style/maths_def"
-        android:text="@string/computing_hardware_motherboard_diagram_text" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/motherboard_diagram"
-        android:id="@+id/computingHardwareMotherboardDiagramImageView" />
-    <View
-        style="@style/LargeDivider" />
     <ExpandableListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
