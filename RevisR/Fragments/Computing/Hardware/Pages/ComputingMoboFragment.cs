@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
 
 using Android.App;
-using Android.Graphics;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using ImageViews.Photo;
 
 namespace RevisR.Fragments.Computing.Hardware.Pages
 {
@@ -43,7 +41,7 @@ namespace RevisR.Fragments.Computing.Hardware.Pages
                 new List<string> { "The Northbridge/Southbridge concept has been superceded by the Platform Controller Hub. Please see the below entry." },
                 new List<string> { "The Platform Controller Hub (PCH) is a family of Intel chipsets, introduced circa 2008. It is the successor to the previous Intel Hub Architecture, which used a northbridge and southbridge instead, and first appeared in the Intel 5 Series.\n\nThe PCH controls certain data paths and support functions used in conjunction with Intel CPUs. These include clocking (the system clock), Flexible Display Interface (FDI) and Direct Media Interface (DMI), although FDI is only used when the chipset is required to support a processor with integrated graphics. As such, I/O functions are reassigned between this new central hub and the CPU compared to the previous architecture: some northbridge functions, the memory controller and PCIe lanes, were integrated into the CPU while the PCH took over the remaining functions in addition to the traditional roles of the southbridge." },
             };
-            
+
             var images = new Dictionary<int, int>
             {
                 { 2, Resource.Layout.elv_child_image_mobodiagram },

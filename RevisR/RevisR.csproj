@@ -61,9 +61,6 @@
     <EnableProguard>true</EnableProguard>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PhotoView, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Android.PhotoView.2.1.3\lib\MonoAndroid\PhotoView.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
