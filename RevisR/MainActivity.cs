@@ -96,8 +96,7 @@ namespace RevisR
                 case Resource.Id.nav_maths:
                     fragment = new Fragments.Maths.MathsHomeFragment();
                     break;
-
-                default:
+                    
                 case Resource.Id.nav_geography:
                 case Resource.Id.nav_history:
                 case Resource.Id.nav_share:
