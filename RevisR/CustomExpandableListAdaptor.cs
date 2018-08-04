@@ -88,13 +88,9 @@ namespace RevisR
         public override View GetChildView(int groupPosition, int childPosition, bool isLastChild, View convertView, ViewGroup parent)
         {
             var item = GetChild(groupPosition, childPosition).ToString();
-            View newview = null;
 
-            if (newview == null)
-            {
-                var inflater = LayoutInflater.FromContext(context);
-                newview = inflater.Inflate(customLayouts.TryGetValue(groupPosition, out int layout) ? layout : Resource.Layout.expandablelistview_child, null);
-            }
+            var inflater = LayoutInflater.FromContext(context);
+            var newview = inflater.Inflate(customLayouts.TryGetValue(groupPosition, out int layout) ? layout : Resource.Layout.expandablelistview_child, null);
 
             var childText = (TextView)newview.FindViewById(Resource.Id.elvTextChild);
 
