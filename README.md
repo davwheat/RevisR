@@ -14,11 +14,11 @@ Either use the releases or build your own by downloading the source code and bui
 
 #### Colours
 
-| Colour         | Value                                             |
-| -------------- |:-------------------------------------------------:|
-| Primary        | <b><span style="color:#bc097a">#bc097a</span></b> |
-| Primary (Dark) | <b><span style="color:#7f0050">#7f0050</span></b> |
-| Accent         | <b><span style="color:#e820af">#e820af</span></b> |
+| Colour         | Value                                                                        |
+| -------------- |:----------------------------------------------------------------------------:|
+| Primary        | ![#bc097a](https://via.placeholder.com/32/bc097a/000000?text=+)<br>`#bc097a` |
+| Primary (Dark) | ![#7f0050](https://via.placeholder.com/32/7f0050/000000?text=+)<br>`#7f0050` |
+| Accent         | ![#e820af](https://via.placeholder.com/32/e820af/000000?text=+)<br>`#e820af` |
 
 #### Icons
 
