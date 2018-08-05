@@ -2,6 +2,12 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/davwheat/revisr/badge)](https://www.codefactor.io/repository/github/davwheat/revisr)
 
+## Discord
+
+If you would like to join our Discord server to talk to our development team, other users or just hang about to get us more people, just click the URL below.
+
+[https://discord.gg/PD5gTe](https://discord.gg/PD5gTe)
+
 ## About
 
 **RevisR** is a free GCSE Revision Helper for Android by students, for students. Contributions to this product are happily accepted.
