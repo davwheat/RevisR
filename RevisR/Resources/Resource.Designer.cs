@@ -1205,44 +1205,44 @@ namespace RevisR
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f090053
-			public const int abc_background_cache_hint_selector_material_dark = 2131296339;
-			
 			// aapt resource value: 0x7f090054
-			public const int abc_background_cache_hint_selector_material_light = 2131296340;
+			public const int abc_background_cache_hint_selector_material_dark = 2131296340;
 			
 			// aapt resource value: 0x7f090055
-			public const int abc_btn_colored_borderless_text_material = 2131296341;
+			public const int abc_background_cache_hint_selector_material_light = 2131296341;
 			
 			// aapt resource value: 0x7f090056
-			public const int abc_btn_colored_text_material = 2131296342;
+			public const int abc_btn_colored_borderless_text_material = 2131296342;
 			
 			// aapt resource value: 0x7f090057
-			public const int abc_color_highlight_material = 2131296343;
+			public const int abc_btn_colored_text_material = 2131296343;
 			
 			// aapt resource value: 0x7f090058
-			public const int abc_hint_foreground_material_dark = 2131296344;
+			public const int abc_color_highlight_material = 2131296344;
 			
 			// aapt resource value: 0x7f090059
-			public const int abc_hint_foreground_material_light = 2131296345;
+			public const int abc_hint_foreground_material_dark = 2131296345;
+			
+			// aapt resource value: 0x7f09005a
+			public const int abc_hint_foreground_material_light = 2131296346;
 			
 			// aapt resource value: 0x7f090008
 			public const int abc_input_method_navigation_guard = 2131296264;
 			
-			// aapt resource value: 0x7f09005a
-			public const int abc_primary_text_disable_only_material_dark = 2131296346;
-			
 			// aapt resource value: 0x7f09005b
-			public const int abc_primary_text_disable_only_material_light = 2131296347;
+			public const int abc_primary_text_disable_only_material_dark = 2131296347;
 			
 			// aapt resource value: 0x7f09005c
-			public const int abc_primary_text_material_dark = 2131296348;
+			public const int abc_primary_text_disable_only_material_light = 2131296348;
 			
 			// aapt resource value: 0x7f09005d
-			public const int abc_primary_text_material_light = 2131296349;
+			public const int abc_primary_text_material_dark = 2131296349;
 			
 			// aapt resource value: 0x7f09005e
-			public const int abc_search_url_text = 2131296350;
+			public const int abc_primary_text_material_light = 2131296350;
+			
+			// aapt resource value: 0x7f09005f
+			public const int abc_search_url_text = 2131296351;
 			
 			// aapt resource value: 0x7f090009
 			public const int abc_search_url_text_normal = 2131296265;
@@ -1253,29 +1253,29 @@ namespace RevisR
 			// aapt resource value: 0x7f09000b
 			public const int abc_search_url_text_selected = 2131296267;
 			
-			// aapt resource value: 0x7f09005f
-			public const int abc_secondary_text_material_dark = 2131296351;
-			
 			// aapt resource value: 0x7f090060
-			public const int abc_secondary_text_material_light = 2131296352;
+			public const int abc_secondary_text_material_dark = 2131296352;
 			
 			// aapt resource value: 0x7f090061
-			public const int abc_tint_btn_checkable = 2131296353;
+			public const int abc_secondary_text_material_light = 2131296353;
 			
 			// aapt resource value: 0x7f090062
-			public const int abc_tint_default = 2131296354;
+			public const int abc_tint_btn_checkable = 2131296354;
 			
 			// aapt resource value: 0x7f090063
-			public const int abc_tint_edittext = 2131296355;
+			public const int abc_tint_default = 2131296355;
 			
 			// aapt resource value: 0x7f090064
-			public const int abc_tint_seek_thumb = 2131296356;
+			public const int abc_tint_edittext = 2131296356;
 			
 			// aapt resource value: 0x7f090065
-			public const int abc_tint_spinner = 2131296357;
+			public const int abc_tint_seek_thumb = 2131296357;
 			
 			// aapt resource value: 0x7f090066
-			public const int abc_tint_switch_track = 2131296358;
+			public const int abc_tint_spinner = 2131296358;
+			
+			// aapt resource value: 0x7f090067
+			public const int abc_tint_switch_track = 2131296359;
 			
 			// aapt resource value: 0x7f09000c
 			public const int accent_material_dark = 2131296268;
@@ -1328,8 +1328,8 @@ namespace RevisR
 			// aapt resource value: 0x7f090050
 			public const int colorPrimaryDark = 2131296336;
 			
-			// aapt resource value: 0x7f090067
-			public const int common_google_signin_btn_text_dark = 2131296359;
+			// aapt resource value: 0x7f090068
+			public const int common_google_signin_btn_text_dark = 2131296360;
 			
 			// aapt resource value: 0x7f090000
 			public const int common_google_signin_btn_text_dark_default = 2131296256;
@@ -1343,8 +1343,8 @@ namespace RevisR
 			// aapt resource value: 0x7f090003
 			public const int common_google_signin_btn_text_dark_pressed = 2131296259;
 			
-			// aapt resource value: 0x7f090068
-			public const int common_google_signin_btn_text_light = 2131296360;
+			// aapt resource value: 0x7f090069
+			public const int common_google_signin_btn_text_light = 2131296361;
 			
 			// aapt resource value: 0x7f090004
 			public const int common_google_signin_btn_text_light_default = 2131296260;
@@ -1358,14 +1358,14 @@ namespace RevisR
 			// aapt resource value: 0x7f090007
 			public const int common_google_signin_btn_text_light_pressed = 2131296263;
 			
-			// aapt resource value: 0x7f090069
-			public const int common_google_signin_btn_tint = 2131296361;
+			// aapt resource value: 0x7f09006a
+			public const int common_google_signin_btn_tint = 2131296362;
 			
 			// aapt resource value: 0x7f090044
 			public const int design_bottom_navigation_shadow_color = 2131296324;
 			
-			// aapt resource value: 0x7f09006a
-			public const int design_error = 2131296362;
+			// aapt resource value: 0x7f09006b
+			public const int design_error = 2131296363;
 			
 			// aapt resource value: 0x7f090045
 			public const int design_fab_shadow_end_color = 2131296325;
@@ -1391,8 +1391,8 @@ namespace RevisR
 			// aapt resource value: 0x7f09004c
 			public const int design_snackbar_background_color = 2131296332;
 			
-			// aapt resource value: 0x7f09006b
-			public const int design_tint_password_toggle = 2131296363;
+			// aapt resource value: 0x7f09006c
+			public const int design_tint_password_toggle = 2131296364;
 			
 			// aapt resource value: 0x7f09001a
 			public const int dim_foreground_disabled_material_dark = 2131296282;
@@ -1421,8 +1421,8 @@ namespace RevisR
 			// aapt resource value: 0x7f090022
 			public const int highlighted_text_material_light = 2131296290;
 			
-			// aapt resource value: 0x7f090052
-			public const int ic_launcher_background = 2131296338;
+			// aapt resource value: 0x7f090053
+			public const int ic_launcher_background = 2131296339;
 			
 			// aapt resource value: 0x7f090023
 			public const int material_blue_grey_800 = 2131296291;
@@ -1511,17 +1511,20 @@ namespace RevisR
 			// aapt resource value: 0x7f09003c
 			public const int secondary_text_disabled_material_light = 2131296316;
 			
+			// aapt resource value: 0x7f090052
+			public const int splash_background = 2131296338;
+			
 			// aapt resource value: 0x7f09003d
 			public const int switch_thumb_disabled_material_dark = 2131296317;
 			
 			// aapt resource value: 0x7f09003e
 			public const int switch_thumb_disabled_material_light = 2131296318;
 			
-			// aapt resource value: 0x7f09006c
-			public const int switch_thumb_material_dark = 2131296364;
-			
 			// aapt resource value: 0x7f09006d
-			public const int switch_thumb_material_light = 2131296365;
+			public const int switch_thumb_material_dark = 2131296365;
+			
+			// aapt resource value: 0x7f09006e
+			public const int switch_thumb_material_light = 2131296366;
 			
 			// aapt resource value: 0x7f09003f
 			public const int switch_thumb_normal_material_dark = 2131296319;
@@ -2293,26 +2296,26 @@ namespace RevisR
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f02008e
-			public const int avd_hide_password_1 = 2130837646;
-			
-			// aapt resource value: 0x7f02008f
-			public const int avd_hide_password_2 = 2130837647;
-			
 			// aapt resource value: 0x7f020090
-			public const int avd_hide_password_3 = 2130837648;
+			public const int avd_hide_password_1 = 2130837648;
+			
+			// aapt resource value: 0x7f020091
+			public const int avd_hide_password_2 = 2130837649;
+			
+			// aapt resource value: 0x7f020092
+			public const int avd_hide_password_3 = 2130837650;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f020091
-			public const int avd_show_password_1 = 2130837649;
-			
-			// aapt resource value: 0x7f020092
-			public const int avd_show_password_2 = 2130837650;
-			
 			// aapt resource value: 0x7f020093
-			public const int avd_show_password_3 = 2130837651;
+			public const int avd_show_password_1 = 2130837651;
+			
+			// aapt resource value: 0x7f020094
+			public const int avd_show_password_2 = 2130837652;
+			
+			// aapt resource value: 0x7f020095
+			public const int avd_show_password_3 = 2130837653;
 			
 			// aapt resource value: 0x7f020056
 			public const int common_full_open_on_phone = 2130837590;
@@ -2458,11 +2461,11 @@ namespace RevisR
 			// aapt resource value: 0x7f020085
 			public const int notification_icon_background = 2130837637;
 			
-			// aapt resource value: 0x7f02008c
-			public const int notification_template_icon_bg = 2130837644;
+			// aapt resource value: 0x7f02008e
+			public const int notification_template_icon_bg = 2130837646;
 			
-			// aapt resource value: 0x7f02008d
-			public const int notification_template_icon_low_bg = 2130837645;
+			// aapt resource value: 0x7f02008f
+			public const int notification_template_icon_low_bg = 2130837647;
 			
 			// aapt resource value: 0x7f020086
 			public const int notification_tile_bg = 2130837638;
@@ -2477,10 +2480,16 @@ namespace RevisR
 			public const int side_nav_bar = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int tooltip_frame_dark = 2130837642;
+			public const int splash_screen = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int tooltip_frame_light = 2130837643;
+			public const int splash_screen_icon = 2130837643;
+			
+			// aapt resource value: 0x7f02008c
+			public const int tooltip_frame_dark = 2130837644;
+			
+			// aapt resource value: 0x7f02008d
+			public const int tooltip_frame_light = 2130837645;
 			
 			static Drawable()
 			{
@@ -2546,11 +2555,11 @@ namespace RevisR
 			// aapt resource value: 0x7f0b010f
 			public const int action_divider = 2131427599;
 			
-			// aapt resource value: 0x7f0b0129
-			public const int action_exit = 2131427625;
+			// aapt resource value: 0x7f0b012a
+			public const int action_exit = 2131427626;
 			
-			// aapt resource value: 0x7f0b0128
-			public const int action_home = 2131427624;
+			// aapt resource value: 0x7f0b0129
+			public const int action_home = 2131427625;
 			
 			// aapt resource value: 0x7f0b0109
 			public const int action_image = 2131427593;
@@ -3086,35 +3095,35 @@ namespace RevisR
 			// aapt resource value: 0x7f0b0030
 			public const int multiply = 2131427376;
 			
-			// aapt resource value: 0x7f0b0126
-			public const int nav_about = 2131427622;
-			
-			// aapt resource value: 0x7f0b0123
-			public const int nav_computing = 2131427619;
-			
 			// aapt resource value: 0x7f0b0127
-			public const int nav_discord = 2131427623;
-			
-			// aapt resource value: 0x7f0b011f
-			public const int nav_english = 2131427615;
-			
-			// aapt resource value: 0x7f0b0125
-			public const int nav_feedback = 2131427621;
-			
-			// aapt resource value: 0x7f0b0121
-			public const int nav_geography = 2131427617;
-			
-			// aapt resource value: 0x7f0b0122
-			public const int nav_history = 2131427618;
-			
-			// aapt resource value: 0x7f0b011e
-			public const int nav_home = 2131427614;
-			
-			// aapt resource value: 0x7f0b0120
-			public const int nav_maths = 2131427616;
+			public const int nav_about = 2131427623;
 			
 			// aapt resource value: 0x7f0b0124
-			public const int nav_share = 2131427620;
+			public const int nav_computing = 2131427620;
+			
+			// aapt resource value: 0x7f0b0128
+			public const int nav_discord = 2131427624;
+			
+			// aapt resource value: 0x7f0b0120
+			public const int nav_english = 2131427616;
+			
+			// aapt resource value: 0x7f0b0126
+			public const int nav_feedback = 2131427622;
+			
+			// aapt resource value: 0x7f0b0122
+			public const int nav_geography = 2131427618;
+			
+			// aapt resource value: 0x7f0b0123
+			public const int nav_history = 2131427619;
+			
+			// aapt resource value: 0x7f0b011f
+			public const int nav_home = 2131427615;
+			
+			// aapt resource value: 0x7f0b0121
+			public const int nav_maths = 2131427617;
+			
+			// aapt resource value: 0x7f0b0125
+			public const int nav_share = 2131427621;
 			
 			// aapt resource value: 0x7f0b0093
 			public const int nav_view = 2131427475;
@@ -3262,6 +3271,9 @@ namespace RevisR
 			
 			// aapt resource value: 0x7f0b006b
 			public const int spacer = 2131427435;
+			
+			// aapt resource value: 0x7f0b011e
+			public const int splashScreenImageView = 2131427614;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int split_action_bar = 2131427336;
@@ -4235,14 +4247,17 @@ namespace RevisR
 			// aapt resource value: 0x7f0c0180
 			public const int AppTheme = 2131493248;
 			
+			// aapt resource value: 0x7f0c0183
+			public const int AppTheme_AppBarOverlay = 2131493251;
+			
 			// aapt resource value: 0x7f0c0182
-			public const int AppTheme_AppBarOverlay = 2131493250;
+			public const int AppTheme_NoActionBar = 2131493250;
+			
+			// aapt resource value: 0x7f0c0184
+			public const int AppTheme_PopupOverlay = 2131493252;
 			
 			// aapt resource value: 0x7f0c0181
-			public const int AppTheme_NoActionBar = 2131493249;
-			
-			// aapt resource value: 0x7f0c0183
-			public const int AppTheme_PopupOverlay = 2131493251;
+			public const int AppTheme_Splash = 2131493249;
 			
 			// aapt resource value: 0x7f0c009a
 			public const int Base_AlertDialog_AppCompat = 2131493018;
@@ -4733,11 +4748,11 @@ namespace RevisR
 			// aapt resource value: 0x7f0c0161
 			public const int Base_Widget_Design_TabLayout = 2131493217;
 			
-			// aapt resource value: 0x7f0c0185
-			public const int Divider = 2131493253;
-			
 			// aapt resource value: 0x7f0c0186
-			public const int LargeDivider = 2131493254;
+			public const int Divider = 2131493254;
+			
+			// aapt resource value: 0x7f0c0187
+			public const int LargeDivider = 2131493255;
 			
 			// aapt resource value: 0x7f0c001e
 			public const int Platform_AppCompat = 2131492894;
@@ -5384,32 +5399,32 @@ namespace RevisR
 			// aapt resource value: 0x7f0c0178
 			public const int Widget_Design_TextInputLayout = 2131493240;
 			
-			// aapt resource value: 0x7f0c018d
-			public const int elv_child = 2131493261;
-			
 			// aapt resource value: 0x7f0c018e
-			public const int elv_image = 2131493262;
+			public const int elv_child = 2131493262;
 			
-			// aapt resource value: 0x7f0c018c
-			public const int elv_parent = 2131493260;
+			// aapt resource value: 0x7f0c018f
+			public const int elv_image = 2131493263;
 			
-			// aapt resource value: 0x7f0c0189
-			public const int heading = 2131493257;
-			
-			// aapt resource value: 0x7f0c0184
-			public const int itemSeparator = 2131493252;
-			
-			// aapt resource value: 0x7f0c018b
-			public const int maths_def = 2131493259;
-			
-			// aapt resource value: 0x7f0c0188
-			public const int subtitle = 2131493256;
+			// aapt resource value: 0x7f0c018d
+			public const int elv_parent = 2131493261;
 			
 			// aapt resource value: 0x7f0c018a
-			public const int text = 2131493258;
+			public const int heading = 2131493258;
 			
-			// aapt resource value: 0x7f0c0187
-			public const int title = 2131493255;
+			// aapt resource value: 0x7f0c0185
+			public const int itemSeparator = 2131493253;
+			
+			// aapt resource value: 0x7f0c018c
+			public const int maths_def = 2131493260;
+			
+			// aapt resource value: 0x7f0c0189
+			public const int subtitle = 2131493257;
+			
+			// aapt resource value: 0x7f0c018b
+			public const int text = 2131493259;
+			
+			// aapt resource value: 0x7f0c0188
+			public const int title = 2131493256;
 			
 			static Style()
 			{
