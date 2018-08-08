@@ -1,6 +1,7 @@
 # RevisR
 
 [![CodeFactor](https://www.codefactor.io/repository/github/davwheat/revisr/badge)](https://www.codefactor.io/repository/github/davwheat/revisr)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/12e997e6b888415abe6b3b05609b98c1)](https://www.codacy.com/project/davwheat/RevisR/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=davwheat/RevisR&amp;utm_campaign=Badge_Grade_Dashboard)
 
 ## Discord
 
