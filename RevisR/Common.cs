@@ -94,7 +94,7 @@ namespace RevisR
         }
 
         public static void openDiscordServer(Context context) {
-            var browserIntent = new Intent(Intent.ActionView, Android.Net.Uri.Parse("https://discord.gg/TaGxQ8"));
+            var browserIntent = new Intent(Intent.ActionView, Android.Net.Uri.Parse("https://discord.gg/zjJtMxu"));
             context.StartActivity(browserIntent);
         }
 
