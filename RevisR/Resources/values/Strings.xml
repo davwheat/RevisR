@@ -1,4 +1,9 @@
 <resources>
+  <string name="app_name">RevisR</string>
+  <string name="app_name_debug">RevisR [Debug]</string>
+
+
+
   <!--Navigation Drawer-->
   <string name="nav_title">RevisR</string>
   <string name="nav_subtitle">v1.0b</string>
@@ -10,7 +15,6 @@
   <string name="nav_history">History</string>
   <string name="nav_computing">Computer Studies</string>
 
-  <string name="app_name">RevisR</string>
   <string name="navigation_drawer_open">Open navigation drawer</string>
   <string name="navigation_drawer_close">Close navigation drawer</string>
   <string name="action_exit">Exit</string>

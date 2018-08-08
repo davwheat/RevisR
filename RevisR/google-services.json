@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "853722933846",
+    "firebase_url": "https://revisr1654.firebaseio.com",
+    "project_id": "revisr1654",
+    "storage_bucket": "revisr1654.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853722933846:android:31590c8f8e0e760e",
+        "android_client_info": {
+          "package_name": "com.revisr.revisr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853722933846-t6lj0fkkono3ae92penuh3vhg9c2prkq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.revisr.revisr",
+            "certificate_hash": "c35f0e8ffed86827a960839440b73de787326f86"
+          }
+        },
+        {
+          "client_id": "853722933846-8n4brg3nkss28r6tspke8nkql4bc85sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZOkQSOZIxBbFEG9PPeQDxLkFIwXTdPQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853722933846-8n4brg3nkss28r6tspke8nkql4bc85sk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

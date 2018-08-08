@@ -3,6 +3,7 @@ using Android.Content;
 using Android.Views;
 using Android.Widget;
 using Android.Support.Design.Widget;
+using System;
 
 namespace RevisR
 {
@@ -23,10 +24,7 @@ namespace RevisR
 
         public static void notImplementedWarning(View view, Context context)
         {
-            Snackbar.Make(view, Localisation.snackbarComingSoon, 0)
-                .SetAction("Send Feedback", (v) => { sendFeedback(context); })
-                .SetActionTextColor(Android.Graphics.Color.DarkTurquoise)
-                .Show();
+            showSnackbar(view, Localisation.snackbarComingSoon, () => sendFeedback(context), "Send Feedback");
         }
 
         public static void sendFeedback(Context context)
@@ -45,9 +43,70 @@ namespace RevisR
             }
         }
 
+        public static void showToast(Context context, string text, ToastLength length)
+        {
+            Toast.MakeText(context, text, length).Show();
+        }
+
+        public static void showSnackbar(View view, string text)
+        {
+            Snackbar.Make(view, text, 0)
+                .Show();
+        }
+
+        public static void showSnackbar(View view, string text, Action action, string actiontext)
+        {
+            if (action == null)
+            {
+                throw new InvalidSnackBarActionException("Action was null at runtime.");
+            }
+
+            Snackbar.Make(view, text, 0)
+                .SetAction(actiontext, (v) => { action(); })
+                .SetActionTextColor(Android.Graphics.Color.ParseColor("#bc097a"))
+                .Show();
+        }
+
+        public static void showSnackbar(View view, string text, Action action, string actiontext, Android.Graphics.Color snackbarActionTextColor)
+        {
+            if (action == null)
+            {
+                throw new InvalidSnackBarActionException("Action was null at runtime.");
+            }
+
+            Snackbar.Make(view, text, 0)
+                .SetAction(actiontext, (v) => { action(); })
+                .SetActionTextColor(snackbarActionTextColor)
+                .Show();
+        }
+
+        public static void showSnackbar(View view, string text, Action action, string actiontext, string snackbarActionTextColor)
+        {
+            if (action == null)
+            {
+                throw new InvalidSnackBarActionException("Action was null at runtime.");
+            }
+
+            Snackbar.Make(view, text, 0)
+                .SetAction(actiontext, (v) => { action(); })
+                .SetActionTextColor(Android.Graphics.Color.ParseColor(snackbarActionTextColor))
+                .Show();
+        }
+
         public static void openDiscordServer(Context context) {
             var browserIntent = new Intent(Intent.ActionView, Android.Net.Uri.Parse("https://discord.gg/TaGxQ8"));
             context.StartActivity(browserIntent);
+        }
+
+        [Serializable]
+        public class InvalidSnackBarActionException : Exception
+        {
+            public InvalidSnackBarActionException() { }
+            public InvalidSnackBarActionException(string message) : base(message) { }
+            public InvalidSnackBarActionException(string message, Exception inner) : base(message, inner) { }
+            protected InvalidSnackBarActionException(
+              System.Runtime.Serialization.SerializationInfo info,
+              System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
         }
     }
 }

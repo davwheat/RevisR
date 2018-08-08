@@ -1,22 +1,29 @@
 ﻿using Android.App;
-using Android.Content;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Views;
-using Android.Widget;
+using Plugin.FirebasePushNotification;
 
 namespace RevisR
 {
+#if DEBUG
+    [Activity(Label = "@string/app_name_debug", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+#else
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+#endif
     public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
+
+            Firebase.InitialiseFirebase(this);
+            FirebasePushNotificationManager.ProcessIntent(this, Intent);
+
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
@@ -96,7 +103,7 @@ namespace RevisR
                 case Resource.Id.nav_maths:
                     fragment = new Fragments.Maths.MathsHomeFragment();
                     break;
-                    
+
                 case Resource.Id.nav_geography:
                 case Resource.Id.nav_history:
                 case Resource.Id.nav_share:
