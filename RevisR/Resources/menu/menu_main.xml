@@ -5,7 +5,7 @@
       android:id="@+id/action_home"
       android:orderInCategory="100"
       android:title="Home"
-      android:icon="@drawable/action_home_black"
+      android:icon="@drawable/actionbar_home"
       app:showAsAction="ifRoom"
       android:height="100dp"
       android:width="100dp" />
