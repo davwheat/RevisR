@@ -1,9 +1,7 @@
 using Android.App;
 using Android.OS;
-using Android.Support.Design.Widget;
 using Android.Views;
 using Android.Widget;
-using RevisR;
 
 namespace RevisR.Fragments
 {
@@ -22,6 +20,11 @@ namespace RevisR.Fragments
             ((TextView)view.FindViewById(Resource.Id.home_computing)).Click += openComputing;
 
             return view;
+        }
+
+        public interface IBackButtonListener
+        {
+            void OnBackPressed();
         }
 
         private void openComputing(object sender, System.EventArgs e)

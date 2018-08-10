@@ -69,12 +69,6 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Plugin.FirebasePushNotification, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Plugin.FirebasePushNotification.2.3.5\lib\MonoAndroid80\Plugin.FirebasePushNotification.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.FirebasePushNotification.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Plugin.FirebasePushNotification.2.3.5\lib\MonoAndroid80\Plugin.FirebasePushNotification.Abstractions.dll</HintPath>
-    </Reference>
     <Reference Include="PusherClient, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PusherClient.NetStandard.0.5.1\lib\netstandard2.0\PusherClient.dll</HintPath>
     </Reference>
@@ -159,7 +153,10 @@
   <ItemGroup>
     <Compile Include="Common.cs" />
     <Compile Include="CustomExpandableListAdaptor.cs" />
-    <Compile Include="Firebase.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Firebase\FirebaseFunctions.cs" />
+    <Compile Include="Firebase\MyFirebaseIIDService.cs" />
+    <Compile Include="Firebase\MyFirebaseMessagingService.cs" />
     <Compile Include="Fragments\Computing\Hardware\ComputingHardwareFragment.cs" />
     <Compile Include="Fragments\Computing\ComputingHomeFragment.cs" />
     <Compile Include="Fragments\Computing\Hardware\Pages\ComputingCpuFragment.cs" />

@@ -6,7 +6,9 @@ using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Views;
-using Plugin.FirebasePushNotification;
+using Firebase.Messaging;
+using Firebase.Iid;
+using Android.Util;
 
 namespace RevisR
 {
@@ -17,36 +19,57 @@ namespace RevisR
 #endif
     public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
+        private const string TAG = nameof(MainActivity);
+        public const int NOTIFICATION_ID = 1;
+        public const string CHANNEL_ID = "General";
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            Firebase.InitialiseFirebase(this);
-            FirebasePushNotificationManager.ProcessIntent(this, Intent);
+            if (Intent.Extras != null)
+            {
+                foreach (var key in Intent.Extras.KeySet())
+                {
+                    var value = Intent.Extras.GetString(key);
+#if DEBUG
+                    Log.Debug(TAG, "Key: {0} Value: {1}", key, value);
+#endif
+                }
+            }
 
-            var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
+            // Check if play services are installed
+            var playservices = Firebase.FirebaseFunctions.IsGooglePlayServicesInstalled(this);
+            if (!playservices.Item1) // If services NOT available
+            {
+                // Inform user their device cannot run this app and force quit
+                Common.showAlertDialog(this, "Play Services", "The Google Play Services are not available.\n\nThis app cannot be run on this device.", Common.AlertDialogButton.Exit, () => Common.closeApplication());
+            }
+            else
+            {
+                var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+                SetSupportActionBar(toolbar);
 
-            var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            var toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
-            drawer.AddDrawerListener(toggle);
-            toggle.SyncState();
+                var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+                var toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
+                drawer.AddDrawerListener(toggle);
+                toggle.SyncState();
 
-            var navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
-            navigationView.SetNavigationItemSelectedListener(this);
+                var navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
+                navigationView.SetNavigationItemSelectedListener(this);
 
-            var fragment = new Fragments.HomeFragment();
-            var fragmentTransaction = FragmentManager.BeginTransaction();
-            fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
-            fragmentTransaction.AddToBackStack(null);
-            fragmentTransaction.Commit();
+                var fragment = new Fragments.HomeFragment();
+                var fragmentTransaction = FragmentManager.BeginTransaction();
+                fragmentTransaction.Replace(Resource.Id.framecontainer, fragment);
+                fragmentTransaction.AddToBackStack(null);
+                fragmentTransaction.Commit();
+            }
         }
 
         protected override void OnNewIntent(Intent intent)
         {
             base.OnNewIntent(intent);
-            FirebasePushNotificationManager.ProcessIntent(this, intent);
         }
 
         public override void OnBackPressed()
@@ -58,7 +81,16 @@ namespace RevisR
             }
             else
             {
-                base.OnBackPressed();
+                var currentFragment = SupportFragmentManager.FindFragmentById(Resource.Id.home);
+                if (currentFragment is Fragments.HomeFragment.IBackButtonListener listener)
+                {
+                    listener.OnBackPressed();
+                    return;
+                }
+                else
+                {
+                    base.OnBackPressed();
+                }
             }
         }
 
@@ -73,7 +105,7 @@ namespace RevisR
             var id = item.ItemId;
             if (id == Resource.Id.action_exit)
             {
-                closeApplication();
+                Common.closeApplication();
             }
             else if (id == Resource.Id.action_home)
             {
@@ -147,11 +179,6 @@ namespace RevisR
                 Common.notImplementedWarning(FindViewById(Android.Resource.Id.Content), ApplicationContext);
                 return false;
             }
-        }
-
-        public static void closeApplication()
-        {
-            Process.KillProcess(Process.MyPid());
         }
     }
 }
