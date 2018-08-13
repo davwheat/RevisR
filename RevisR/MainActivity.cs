@@ -9,6 +9,11 @@ using Android.Views;
 using Firebase.Messaging;
 using Firebase.Iid;
 using Android.Util;
+using Android.Gms.Ads;
+using Android.Widget;
+using Android.Support.V4.App;
+using System;
+using Android;
 
 namespace RevisR
 {
@@ -27,7 +32,7 @@ namespace RevisR
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-
+            
             if (Intent.Extras != null)
             {
                 foreach (var key in Intent.Extras.KeySet())
@@ -48,11 +53,19 @@ namespace RevisR
             }
             else
             {
+                if (Android.Support.V4.Content.ContextCompat.CheckSelfPermission(this, Manifest.Permission.AccessFineLocation) != Android.Content.PM.Permission.Granted && ActivityCompat.CheckSelfPermission(this, Manifest.Permission.AccessCoarseLocation) != Android.Content.PM.Permission.Granted)
+                {
+                    Common.showAlertDialog(this, "Permissions", "This app uses your Location to show more relevant advertising. We don't use your location for anything else at the moment, and we will always ask you if we ever decide to.\n\nFeel free to deny the permission -- we don't mind!", Common.AlertDialogButton.Ok, () => ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.AccessFineLocation }, 1));
+                }
+                
+                // Initialise AdMob
+                AdMob.AdMobFunctions.Initialise(this);
+
                 var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
                 SetSupportActionBar(toolbar);
 
                 var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-                var toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
+                var toggle = new Android.Support.V7.App.ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
                 drawer.AddDrawerListener(toggle);
                 toggle.SyncState();
 
@@ -72,27 +85,27 @@ namespace RevisR
             base.OnNewIntent(intent);
         }
 
-        public override void OnBackPressed()
-        {
-            var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            if (drawer.IsDrawerOpen(GravityCompat.Start))
-            {
-                drawer.CloseDrawer(GravityCompat.Start);
-            }
-            else
-            {
-                var currentFragment = SupportFragmentManager.FindFragmentById(Resource.Id.home);
-                if (currentFragment is Fragments.HomeFragment.IBackButtonListener listener)
-                {
-                    listener.OnBackPressed();
-                    return;
-                }
-                else
-                {
-                    base.OnBackPressed();
-                }
-            }
-        }
+        //public override void OnBackPressed()
+        //{
+        //    var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+        //    if (drawer.IsDrawerOpen(GravityCompat.Start))
+        //    {
+        //        drawer.CloseDrawer(GravityCompat.Start);
+        //    }
+        //    else
+        //    {
+        //        var currentFragment = SupportFragmentManager.FindFragmentById(Resource.Id.home);
+        //        if (currentFragment is Fragments.HomeFragment.IBackButtonListener listener)
+        //        {
+        //            listener.OnBackPressed();
+        //            return;
+        //        }
+        //        else
+        //        {
+        //            base.OnBackPressed();
+        //        }
+        //    }
+        //}
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
@@ -127,7 +140,7 @@ namespace RevisR
         public bool OnNavigationItemSelected(IMenuItem item)
         {
             var id = item.ItemId;
-            Fragment fragment = null;
+            Android.App.Fragment fragment = null;
 
             switch (id)
             {

@@ -19,12 +19,12 @@ namespace RevisR.Fragments
             ((TextView)view.FindViewById(Resource.Id.home_history)).Click += openHistory;
             ((TextView)view.FindViewById(Resource.Id.home_computing)).Click += openComputing;
 
-            return view;
-        }
+            var ad = AdMob.AdMobFunctions.getBannerAd(Context);
+            if (ad != null) // Will return null if Ads are disabled
+                view.FindViewById<LinearLayout>(Resource.Id.homeFragmentLinearLayout).AddView(ad);
 
-        public interface IBackButtonListener
-        {
-            void OnBackPressed();
+            view.SetOnKeyListener(new IDisableBackOnKeyListener(view));
+            return view;
         }
 
         private void openComputing(object sender, System.EventArgs e)
