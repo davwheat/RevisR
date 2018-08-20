@@ -173,8 +173,8 @@ namespace RevisR
                 };
                 if (enumToString.TryGetValue(button1text, out string button1textstring) && enumToString.TryGetValue(button2text, out string button2textstring))
                 {
-                    alert.SetButton(button2textstring, (c, ev) => { button2action?.Invoke(); });
-                    alert.SetButton2(button1textstring, (c, ev) => { button1action?.Invoke(); });
+                    alert.SetButton(button1textstring, (c, ev) => { button1action?.Invoke(); });
+                    alert.SetButton2(button2textstring, (c, ev) => { button2action?.Invoke(); });
                     alert.Show();
                 }
                 else
@@ -203,9 +203,9 @@ namespace RevisR
                 };
                 if (enumToString.TryGetValue(button1text, out string button1textstring) && enumToString.TryGetValue(button2text, out string button2textstring) && enumToString.TryGetValue(button3text, out string button3textstring))
                 {
-                    alert.SetButton(button3textstring, (c, ev) => { button3action?.Invoke(); });
+                    alert.SetButton(button1textstring, (c, ev) => { button1action?.Invoke(); });
                     alert.SetButton2(button2textstring, (c, ev) => { button2action?.Invoke(); });
-                    alert.SetButton3(button1textstring, (c, ev) => { button1action?.Invoke(); });
+                    alert.SetButton3(button3textstring, (c, ev) => { button3action?.Invoke(); });
                     alert.Show();
                 }
                 else
@@ -226,47 +226,5 @@ namespace RevisR
         {
             Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
         }
-
-        #region Settings
-
-        #region Get Settings Methods
-
-        public static string getSettingString(string name) => Application.Context.GetSharedPreferences(nameof(RevisR), FileCreationMode.Private).GetString(name, null);
-
-        public static bool getSettingBool(string name, bool defaultReturn = false) => Application.Context.GetSharedPreferences(nameof(RevisR), FileCreationMode.Private).GetBoolean(name, defaultReturn);
-
-        public static int getSettingInt(string name) => Application.Context.GetSharedPreferences(nameof(RevisR), FileCreationMode.Private).GetInt(name, -1);
-
-        public static long getSettingLong(string name) => Application.Context.GetSharedPreferences(nameof(RevisR), FileCreationMode.Private).GetLong(name, -1);
-
-        public static IDictionary<string, object> getAllSettings() => Application.Context.GetSharedPreferences(nameof(RevisR), FileCreationMode.Private).All;
-
-        #endregion
-
-        #region Setting Saving Overload Methods
-
-        public static void saveSetting(string name, string setting)
-        {
-            Application.Context.GetSharedPreferences(nameof(RevisR), FileCreationMode.Private).Edit().PutString(name, setting).Apply();
-        }
-
-        public static void saveSetting(string name, bool setting)
-        {
-            Application.Context.GetSharedPreferences(nameof(RevisR), FileCreationMode.Private).Edit().PutBoolean(name, setting).Apply();
-        }
-
-        public static void saveSetting(string name, int setting)
-        {
-            Application.Context.GetSharedPreferences(nameof(RevisR), FileCreationMode.Private).Edit().PutInt(name, setting).Apply();
-        }
-
-        public static void saveSetting(string name, long setting)
-        {
-            Application.Context.GetSharedPreferences(nameof(RevisR), FileCreationMode.Private).Edit().PutLong(name, setting).Apply();
-        }
-
-        #endregion
-
-        #endregion
     }
 }
