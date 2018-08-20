@@ -6,11 +6,6 @@ using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Views;
-using Firebase.Messaging;
-using Firebase.Iid;
-using Android.Util;
-using Android.Gms.Ads;
-using Android.Widget;
 using Android.Support.V4.App;
 using System;
 using Android;
@@ -32,7 +27,7 @@ namespace RevisR
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-            
+
             if (Intent.Extras != null)
             {
                 foreach (var key in Intent.Extras.KeySet())
@@ -57,7 +52,7 @@ namespace RevisR
                 {
                     Common.showAlertDialog(this, "Permissions", "This app uses your Location to show more relevant advertising. We don't use your location for anything else at the moment, and we will always ask you if we ever decide to.\n\nFeel free to deny the permission -- we don't mind!", Common.AlertDialogButton.Ok, () => ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.AccessFineLocation }, 1));
                 }
-                
+
                 // Initialise AdMob
                 AdMob.AdMobFunctions.Initialise(this);
 
@@ -84,28 +79,6 @@ namespace RevisR
         {
             base.OnNewIntent(intent);
         }
-
-        //public override void OnBackPressed()
-        //{
-        //    var drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-        //    if (drawer.IsDrawerOpen(GravityCompat.Start))
-        //    {
-        //        drawer.CloseDrawer(GravityCompat.Start);
-        //    }
-        //    else
-        //    {
-        //        var currentFragment = SupportFragmentManager.FindFragmentById(Resource.Id.home);
-        //        if (currentFragment is Fragments.HomeFragment.IBackButtonListener listener)
-        //        {
-        //            listener.OnBackPressed();
-        //            return;
-        //        }
-        //        else
-        //        {
-        //            base.OnBackPressed();
-        //        }
-        //    }
-        //}
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {

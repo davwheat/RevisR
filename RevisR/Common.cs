@@ -120,7 +120,7 @@ namespace RevisR
                 }
                 else
                 {
-                    throw new AlertDialogButtonEnumValueNotResolvableToButtonTextStringException($"{button1text} could not be resolved to a string through the given dictionary.");
+                    throw new InvalidOperationException($"{button1text} could not be resolved to a string through the given dictionary when creating the Alert Dialog");
                 }
             }
         }

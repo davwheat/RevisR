@@ -9,7 +9,7 @@ namespace RevisR
             this.view = view;
         }
 
-        private View view;
+        private readonly View view;
 
         bool View.IOnKeyListener.OnKey(View v, Keycode k, KeyEvent e)
         {

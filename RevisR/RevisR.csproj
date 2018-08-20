@@ -54,12 +54,13 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidLinkMode>Full</AndroidLinkMode>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <BundleAssemblies>false</BundleAssemblies>
-    <EnableProguard>true</EnableProguard>
+    <EnableProguard>false</EnableProguard>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
   </PropertyGroup>
   <PropertyGroup>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
@@ -163,7 +164,6 @@
     <Compile Include="AdMob\AdMobFunctions.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="CustomExpandableListAdaptor.cs" />
-    <Compile Include="Exceptions.cs" />
     <Compile Include="Firebase\FirebaseFunctions.cs" />
     <Compile Include="Firebase\MyFirebaseIIDService.cs" />
     <Compile Include="Firebase\MyFirebaseMessagingService.cs" />
